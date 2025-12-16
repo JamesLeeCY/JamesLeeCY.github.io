@@ -7,12 +7,27 @@ permalink: /publications.html
 ## 期刊文章 (Journal Articles)
 
 {% for item in site.data.publications.journal_articles %}
-* [cite_start]**{{ item.title }}** [cite: 47]
-  * [cite_start]{{ item.authors }} [cite: 46] ({{ item.year }}) [cite_start][cite: 46]
-  * [cite_start]*{{ item.journal }}* [cite: 48]
-  * [cite_start][DOI: {{ item.doi }}]({{ item.doi }}) [cite: 48]
+* **{{ item.title }}**
+  * {{ item.authors }} ({{ item.year }})
+  * *{{ item.journal }}*{% if item.volume %}, {{ item.volume }}{% endif %}{% if item.issue %}({{ item.issue }}){% endif %}{% if item.pages %}, {{ item.pages }}{% endif %}
+  * [DOI: {{ item.doi }}]({{ item.doi }})
 {% endfor %}
 
-## 會議發表 (Conference)
+## 書籍章節 (Book Chapters)
 
-* Lee, C. Y., Yu, C. P., Gutchess, A., Goh, J. O. S. (2024). The Role of Environmental Preferences for Forest and Urban in Nature-Based Interventions. [cite_start]Annual Meeting for Psychonomics Society, NYC, NY, USA. [cite: 61, 62, 63, 64]
+{% for item in site.data.publications.book_chapters %}
+* **{{ item.title }}**
+  * {{ item.authors }} ({{ item.year }})
+  * In {{ item.editor }} (Ed.), *{{ item.book }}*
+  * {{ item.publisher }}
+  {% if item.link %}* [Link]({{ item.link }}){% endif %}
+{% endfor %}
+
+## 會議發表 (Conferences & Presentations)
+
+{% for item in site.data.publications.conferences_presentations %}
+* **{{ item.title }}**
+  * {{ item.authors }} ({{ item.year }})
+  * {{ item.event }}, {{ item.location }}
+  {% if item.link %}* [PDF]({{ item.link }}){% endif %}
+{% endfor %}
