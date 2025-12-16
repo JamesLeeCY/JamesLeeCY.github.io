@@ -1,0 +1,16 @@
+# 論文區
+journal_articles:
+  - title: Differential neural processing of value during decision-making in adults with attention-deficit/hyperactivity disorder and healthy controls.
+    [cite_start]authors: Lee, C. Y., Goh, J. O. S.*, Gau, S. S. F.* [cite: 46]
+    [cite_start]journal: Journal of Psychiatry and Neuroscience [cite: 48]
+    year: 2023
+    [cite_start]doi: https://doi.org/10.1503/jpn.220123 [cite: 48]
+    # ... 其他論文
+
+# 書籍章節區
+book_chapters:
+  - [cite_start]title: Visual cognition and culture. [cite: 53]
+    [cite_start]authors: Goh, J. O. S., Lee, C. Y., Tu, Y. Z., Dallaire-Théroux. [cite: 53]
+    [cite_start]book: Clinical Cultural Neuroscience: Foundations and Neuropsychological Assessment. [cite: 54]
+    year: 2019
+    # ... 其他章節
