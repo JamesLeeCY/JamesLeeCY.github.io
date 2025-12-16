@@ -1,0 +1,26 @@
+<footer class="site-footer">
+    <div class="container footer-content">
+        <p>聯繫方式：</p>
+        <p>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/chun-yi-lee-1778ablal/" target="_blank">chun-yi-lee-1778ablal</a></p>
+        <p class="copyright">
+            &copy; {{ site.time | date: "%Y" }} {{ site.title }}. Powered by Jekyll & GitHub Pages.
+        </p>
+    </div>
+</footer>
+
+<style>
+/* 簡單的頁腳樣式 (您可以加到 assets/css/style.css) */
+.site-footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px 0;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.site-footer a {
+    color: #3498db;
+    text-decoration: none;
+}
+</style>
