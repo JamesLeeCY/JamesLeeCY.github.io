@@ -1,0 +1,15 @@
+<div class="skills-section">
+    <h3>程式語言 (Programming Languages)</h3>
+    <ul class="tag-list">
+        {% for lang in site.data.skills.languages %}
+        <li>{{ lang }}</li>
+        {% endfor %}
+    </ul>
+
+    <h3>研究方法與工具 (Research Methods & Tools)</h3>
+    <ul class="method-list">
+        {% for tool in site.data.skills.methods %}
+        <li>{{ tool }}</li>
+        {% endfor %}
+    </ul>
+</div>
