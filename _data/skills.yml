@@ -7,8 +7,8 @@ languages:
   - JavaScript
 
 methods:
-  - fMRI (Functional Magnetic Resonance Imaging) Data Analysis
-  - Virtual Reality (VR) Experimental Design
-  - Cross-Cultural / Cross-National Study Design
-  - Behavioral Data Processing
-  - Database Management (Shell/SQL)
+  - "fMRI (Functional Magnetic Resonance Imaging) Data Analysis"
+  - "Virtual Reality (VR) Experimental Design"
+  - "Cross-Cultural / Cross-National Study Design"
+  - "Behavioral Data Processing"
+  - "Database Management (Shell/SQL)"
