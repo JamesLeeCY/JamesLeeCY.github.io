@@ -20,7 +20,7 @@ I am always open to discussing new research collaborations, opportunities, or qu
 
     <p>
         <strong>🔗 LinkedIn:</strong><br>
-        <a href="https://www.linkedin.com/in/chun-yi-lee-1778ablal/" target="_blank">Chun-Yi Lee (Profile)</a>
+        <a href="https://www.linkedin.com/in/chun-yi-lee-1778ab1a1/" target="_blank">Chun-Yi Lee (Profile)</a>
     </p>
 
     <p>
