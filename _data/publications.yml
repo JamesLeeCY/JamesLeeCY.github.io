@@ -1,45 +1,50 @@
 journal_articles:
   # 第一篇期刊文章
-  - title: Differential neural processing of value during decision-making in adults with attention-deficit/hyperactivity disorder and healthy controls.
-    [cite_start]authors: Lee, C. Y., Goh, J. O. S.*, Gau, S. S. F.* [cite: 46]
-    [cite_start]journal: Journal of Psychiatry and Neuroscience [cite: 48]
+  - title: "Differential neural processing of value during decision-making in adults with attention-deficit/hyperactivity disorder and healthy controls."
+    authors: "Lee, C. Y., Goh, J. O. S.*, Gau, S. S. F.*"
+    journal: "Journal of Psychiatry and Neuroscience"
     volume: 48
     issue: 2
-    [cite_start]pages: E115-E124 [cite: 48]
-    [cite_start]year: 2023 [cite: 46]
-    [cite_start]doi: https://doi.org/10.1503/jpn.220123 [cite: 48]
+    pages: "E115-E124"
+    year: 2023
+    doi: "https://doi.org/10.1503/jpn.220123"
+    # citations: [46, 48]  # 如果需要追蹤引用來源
   
   # 第二篇期刊文章
-  - [cite_start]title: Culture-related differences in the neural processing of probability during mixed lottery value-based decision-making. [cite: 50]
-    [cite_start]authors: Lee, C.-Y., Chen, C.-C., Mair, R. W., Gutchess, A., & Goh, J. O. S.* [cite: 49]
-    journal: Biological Psychology
-    [cite_start]year: 2021 [cite: 49]
-    [cite_start]identifier: 108209 [cite: 50]
-    [cite_start]doi: https://doi.org/10.1016/j.biopsycho.2021.108209 [cite: 51]
+  - title: "Culture-related differences in the neural processing of probability during mixed lottery value-based decision-making."
+    authors: "Lee, C.-Y., Chen, C.-C., Mair, R. W., Gutchess, A., & Goh, J. O. S.*"
+    journal: "Biological Psychology"
+    year: 2021
+    identifier: "108209"
+    doi: "https://doi.org/10.1016/j.biopsycho.2021.108209"
+    # citations: [49, 50, 51]
 
 book_chapters:
   # 書籍章節
-  - [cite_start]title: Visual cognition and culture. [cite: 53]
-    [cite_start]authors: Goh, J. O. S., Lee, C. Y., Tu, Y. Z., Dallaire-Théroux, C. [cite: 53]
-    [cite_start]book: Clinical Cultural Neuroscience: Foundations and Neuropsychological Assessment. [cite: 54]
-    editor: Otto Pedraza
-    [cite_start]publisher: Oxford University Press, NY, USA [cite: 54]
-    [cite_start]year: 2019 [cite: 53]
-    [cite_start]link: [link] [cite: 54] # 保持原始 CV 中的 [link] 標註
+  - title: "Visual cognition and culture."
+    authors: "Goh, J. O. S., Lee, C. Y., Tu, Y. Z., Dallaire-Théroux, C."
+    book: "Clinical Cultural Neuroscience: Foundations and Neuropsychological Assessment."
+    editor: "Otto Pedraza"
+    publisher: "Oxford University Press, NY, USA"
+    year: 2019
+    link: ""  # 請填入實際連結
+    # citations: [53, 54]
 
 conferences_presentations:
   # 會議發表 1
-  - [cite_start]title: Cross-site multiband fMRI signal validation and calibration for cross-cultural neurocognitive studies. [cite: 58]
-    [cite_start]authors: Chen, C. C., Lee, C. Y., Mair, R., Gutchess, A., Goh, J. O. S. [cite: 57]
-    [cite_start]event: Annual Meeting for the Cognitive Neuroscience Society [cite: 59]
-    [cite_start]location: Boston, MA, USA [cite: 59]
-    [cite_start]year: 2020 [cite: 57]
-    [cite_start]link: [pdf] [cite: 59]
-
+  - title: "Cross-site multiband fMRI signal validation and calibration for cross-cultural neurocognitive studies."
+    authors: "Chen, C. C., Lee, C. Y., Mair, R., Gutchess, A., Goh, J. O. S."
+    event: "Annual Meeting for the Cognitive Neuroscience Society"
+    location: "Boston, MA, USA"
+    year: 2020
+    link: ""  # 請填入 PDF 連結
+    # citations: [57, 58, 59]
+  
   # 會議發表 2
-  - [cite_start]title: The Role of Environmental Preferences for Forest and Urban in Nature-Based Interventions. [cite: 62]
-    [cite_start]authors: Lee, C. Y., Yu, C. P., Gutchess, A., Goh, J. O. S. [cite: 61]
-    [cite_start]event: Annual Meeting for Psychonomics Society [cite: 64]
-    [cite_start]location: NYC, NY, USA [cite: 64]
-    [cite_start]year: 2024 [cite: 61]
-    [cite_start]link: [pdf] [cite: 64]
+  - title: "The Role of Environmental Preferences for Forest and Urban in Nature-Based Interventions."
+    authors: "Lee, C. Y., Yu, C. P., Gutchess, A., Goh, J. O. S."
+    event: "Annual Meeting for Psychonomics Society"
+    location: "NYC, NY, USA"
+    year: 2024
+    link: ""  # 請填入 PDF 連結
+    # citations: [61, 62, 64]
