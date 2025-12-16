@@ -1,7 +1,7 @@
-title: Chun-Yi Lee - Interdisciplinary Neuroscience Researcher
-[cite_start]email: james820102@gmail.com [cite: 3]
+title: Chun-Yi Lee - Interdisciplinary Neuroscience Researcher # 必須在第一行第一欄
+email: james820102@gmail.com
 description: '跨學科神經科學研究者，專注於環境（自然）對認知功能和決策制定的神經機制影響。'
-baseurl: "" # 部署到 .github.io 時通常留空
+baseurl: "" 
 url: "https://你的GitHub使用者名稱.github.io"
 
 # 導航列設定
