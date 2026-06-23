@@ -71,7 +71,7 @@ main { min-height: 60vh; }
 .header-inner {
     max-width: var(--max-width);
     margin: 0 auto;
-    padding: 0 32px;
+    padding: 0 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -98,6 +98,7 @@ main { min-height: 60vh; }
     border-radius: 6px;
     transition: all 0.2s;
     position: relative;
+    white-space: nowrap;
 }
 
 .site-nav a:hover { color: var(--navy); }
