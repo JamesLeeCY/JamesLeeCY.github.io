@@ -4,62 +4,57 @@ title: About
 permalink: /
 ---
 
-<section class="hero">
-    <div class="hero-content">
-        <div class="hero-avatar">🧠</div>
-        <h1>Chun-Yi Lee</h1>
-        <p class="hero-subtitle">Interdisciplinary Neuroscience Researcher</p>
-        <p class="hero-affiliation">Academia Sinica &amp; National Taiwan University · Taipei, Taiwan</p>
-        <div class="hero-tags">
-            <span class="hero-tag">fMRI Neuroimaging</span>
-            <span class="hero-tag">Virtual Reality</span>
-            <span class="hero-tag">Decision Making</span>
-            <span class="hero-tag">Nature &amp; Cognition</span>
-            <span class="hero-tag">Cross-Cultural Neuroscience</span>
-        </div>
-        <div class="hero-cta">
-            <a href="/research.html" class="btn btn-primary">View Research</a>
-            <a href="/contact.html" class="btn btn-outline">Get in Touch</a>
-        </div>
+<section class="profile">
+    <div class="profile-photo-wrap">
+        <img src="{{ '/assets/profile.jpg' | relative_url }}" alt="Chun-Yi Lee" class="profile-photo">
     </div>
-    <div class="hero-wave">
-        <svg viewBox="0 0 1440 70" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0,40 C240,75 480,5 720,30 C960,55 1200,10 1440,35 L1440,70 L0,70 Z"></path>
-        </svg>
+    <div class="profile-info">
+        <h1 class="profile-name">Chun-Yi Lee（李峻誼）</h1>
+        <p class="profile-title">Interdisciplinary Neuroscience Researcher</p>
+        <p class="profile-affiliation">Academia Sinica &amp; National Taiwan University · Taipei, Taiwan</p>
+        <p class="profile-bio">
+            我是一位專注於跨學科神經科學的研究者，研究核心在於結合神經影像 (fMRI)、心理物理學與虛擬實境 (VR) 技術，
+            探索環境（特別是自然環境）對人類認知功能和價值決策制定的神經機制影響。
+        </p>
+        <div class="profile-links">
+            <a href="/research.html" class="profile-link primary">Research</a>
+            <a href="/publications.html" class="profile-link">Publications</a>
+            <a href="https://www.linkedin.com/in/chun-yi-lee-1778ab1a1/" target="_blank" class="profile-link">LinkedIn ↗</a>
+            <a href="mailto:james820102@gmail.com" class="profile-link">Email</a>
+        </div>
     </div>
 </section>
 
-<div class="about-section">
-    <div class="section-label">About Me</div>
-    <h2>關於我</h2>
-    <p>我是 <strong>Chun-Yi Lee</strong>，一位專注於跨學科神經科學的研究者。我的研究核心在於結合神經影像 (fMRI)、心理物理學與虛擬實境 (VR) 技術，探索環境（特別是自然環境）對人類認知功能和價值決策制定的神經機制影響。</p>
-
-    <hr class="divider">
-
-    <h2>教育背景</h2>
-    <ul class="education-list">
-        <li>
-            <span class="edu-year">PhD</span>
-            <div>
-                <div class="edu-degree">Interdisciplinary Neuroscience</div>
-                <div class="edu-school">Academia Sinica &amp; National Taiwan University</div>
-            </div>
-        </li>
-        <li>
-            <span class="edu-year">MA</span>
-            <div>
-                <div class="edu-degree">Graduate Institute of Brain and Mind Sciences</div>
-                <div class="edu-school">National Taiwan University</div>
-            </div>
-        </li>
-    </ul>
-
-    <hr class="divider">
-
-    <h2>核心能力</h2>
-    {% include skills.html %}
-
-    <div class="quote-block">
-        <blockquote>「致力於將神經科學的發現應用於改善認知健康和公共衛生。」</blockquote>
+<section class="section-alt">
+    <div class="section-inner section">
+        <h2 class="section-title">教育背景 · Education</h2>
+        <ul class="education-list">
+            <li>
+                <span class="edu-year">PhD</span>
+                <div>
+                    <div class="edu-degree">Interdisciplinary Neuroscience</div>
+                    <div class="edu-school">Academia Sinica &amp; National Taiwan University</div>
+                </div>
+            </li>
+            <li>
+                <span class="edu-year">MA</span>
+                <div>
+                    <div class="edu-degree">Graduate Institute of Brain and Mind Sciences</div>
+                    <div class="edu-school">National Taiwan University</div>
+                </div>
+            </li>
+            <li>
+                <span class="edu-year">BS</span>
+                <div>
+                    <div class="edu-degree">Department of Life Sciences</div>
+                    <div class="edu-school">National Taiwan University</div>
+                </div>
+            </li>
+        </ul>
     </div>
-</div>
+</section>
+
+<section class="section">
+    <h2 class="section-title">核心能力 · Core Competence</h2>
+    {% include skills.html %}
+</section>
