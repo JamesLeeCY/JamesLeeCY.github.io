@@ -1,12 +1,11 @@
 <header class="site-header">
-    <div class="container header-content">
+    <div class="header-inner">
         <a href="{{ site.baseurl }}/" class="site-title">{{ site.title }}</a>
-        
         <nav class="site-nav">
             <ul>
                 {% for item in site.navbar %}
-                <li class="nav-item">
-                    <a class="page-link" href="{{ item.url | relative_url }}">
+                <li>
+                    <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} class="active"{% endif %}>
                         {{ item.title }}
                     </a>
                 </li>
