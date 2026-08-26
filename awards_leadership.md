@@ -25,7 +25,7 @@ permalink: /awards_leadership.html
             <span class="award-year">2015</span>
             <div>
                 <div class="award-title">Valedictorian of BA's department · 學士班畢業生致詞代表</div>
-                <div class="award-org">Department of Life Sciences, NTU</div>
+                <div class="award-org">Department of Forestry and Resource Conservation, NTU</div>
             </div>
         </div>
 
