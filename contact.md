@@ -14,7 +14,7 @@ permalink: /contact.html
         <div class="contact-card">
             <div class="contact-icon">✉️</div>
             <div class="contact-label">Email</div>
-            <div class="contact-value"><a href="mailto:james820102@gmail.com">james820102@gmail.com</a></div>
+            <div class="contact-value"><a href="mailto:chunyilee0102@gmail.com">chunyilee0102@gmail.com</a></div>
         </div>
 
         <div class="contact-card">
