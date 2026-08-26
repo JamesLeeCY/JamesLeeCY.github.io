@@ -1,14 +1,74 @@
-languages:
-  - MATLAB
-  - R
-  - Python
-  - Shell
-  - SQL
-  - JavaScript
+# 技能區塊資料。每個 group 會依序渲染成一個類別。
+# style: tag    → 實心標籤（tag-list）— 用於核心技術能力
+# style: method → 外框標籤（method-list）— 用於研究方法
+groups:
+  - title: "程式語言 / Programming"
+    style: tag
+    items:
+      - Python
+      - R
+      - MATLAB
+      - SQL
+      - Shell
+      - JavaScript
 
-methods:
-  - "fMRI (Functional Magnetic Resonance Imaging) Data Analysis"
-  - "Virtual Reality (VR) Experimental Design"
-  - "Cross-Cultural / Cross-National Study Design"
-  - "Behavioral Data Processing"
-  - "Database Management (Shell/SQL)"
+  - title: "機器學習 / Machine Learning"
+    style: tag
+    items:
+      - Supervised Learning
+      - Classification & Regression
+      - Clustering
+      - XGBoost
+      - Graph Neural Networks
+      - Time-Series Analysis
+      - Anomaly Detection
+      - Imbalanced Classification
+      - Concept Drift
+
+  - title: "AI 與 LLM / AI & LLM"
+    style: tag
+    items:
+      - RAG (Retrieval-Augmented Generation)
+      - Embeddings & Semantic Search
+      - Multi-Agent Systems
+      - LLM Evaluation
+      - Hallucination Evaluation
+      - NLP / Text Classification
+      - Chinese NLP
+      - Claude Code
+
+  - title: "電腦視覺與訊號處理 / Computer Vision & Signal"
+    style: tag
+    items:
+      - OpenCV
+      - YOLOv8
+      - HOG Features
+      - Object Detection
+      - Signal Processing
+      - Multimodal Feature Extraction
+
+  - title: "資料工程 / Data Engineering"
+    style: tag
+    items:
+      - Feature Engineering
+      - Data Preprocessing & QC Pipelines
+      - Pipeline Development
+      - Cross-Site Data Integration
+      - Database Management (Shell/SQL)
+
+  - title: "評估與統計 / Evaluation & Statistics"
+    style: tag
+    items:
+      - Experimental Design
+      - Statistical Modeling
+      - Model Calibration (Brier Score, ECE)
+      - Walk-Forward Backtesting
+      - Leakage-Safe Temporal Splits
+
+  - title: "研究方法 / Research Methods"
+    style: method
+    items:
+      - "fMRI (Functional Magnetic Resonance Imaging) Data Analysis"
+      - "Virtual Reality (VR) Experimental Design"
+      - "Cross-Cultural / Cross-National Study Design"
+      - "Behavioral Data Processing"
