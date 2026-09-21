@@ -24,7 +24,7 @@ permalink: /research.html
             <li>把原始影片以每個 TR（0.752 秒）為單位，拆成低階視覺、動態、語義與物件層級的特徵序列，與 fMRI 時序對齊成可檢定的迴歸變項。</li>
             <li>發表：Psychonomics Society Annual Meeting, NYC (2024)。</li>
         </ul>
-        <p class="research-transfer"><strong>方法遷移：</strong>多模態特徵工程、非結構化訊號轉可建模變項、時序對齊——同一套作法用在製造感測訊號與影像品質資料上。</p>
+        <p class="research-transfer"><strong>方法遷移：</strong>多模態特徵工程、非結構化訊號轉可建模變項、時序對齊——同一套作法用在製造製程的感測訊號序列上。</p>
         <ul class="tag-list">
             <li>Python</li><li>VR Experimental Design</li><li>OpenCV</li><li>YOLOv8</li><li>Multimodal Time-Series</li>
         </ul>
