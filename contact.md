@@ -26,7 +26,7 @@ permalink: /contact.html
         <div class="contact-card">
             <div class="contact-icon">🏫</div>
             <div class="contact-label">Affiliation</div>
-            <div class="contact-value">Academia Sinica &amp; NTU<br><span class="text-muted" style="font-size:0.85rem;">Taipei, Taiwan</span></div>
+            <div class="contact-value">NTU &amp; Academia Sinica<br><span class="text-muted" style="font-size:0.85rem;">Taipei, Taiwan</span></div>
         </div>
     </div>
 </div>
