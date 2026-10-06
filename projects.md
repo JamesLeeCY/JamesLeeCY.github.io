@@ -63,11 +63,13 @@ permalink: /projects.html
         </div>
         <p>針對學術文獻庫的嚴格引用溯源 RAG 助理，內建可量化的幻覺率評估。<strong>檢索是簡單的那一半</strong>——能量化幻覺率，才是這個系統可以被信任的原因。</p>
         <ul>
-            <li>Embedding 檢索與上下文組裝，回答一律附可驗證的原文引用。</li>
-            <li>幻覺評估流程量化「模型宣稱有出處、但出處不支持該宣稱」的比例。</li>
+            <li>混合檢索（dense embeddings ⊕ BM25，RRF 融合）：學術文字充滿 <code>ISFC</code>、<code>TFCE</code> 這類精確術語，純語意向量會把它們模糊掉。</li>
+            <li>切塊消融實驗：依章節結構切塊在 26 題人工 golden set 上達 <strong>Hit@5 100% / MRR 0.952</strong>，固定長度基準為 88% / 0.794。</li>
+            <li>驗證層由便宜到昂貴：每個宣稱的逐字引文必須出現在被引段落中，否則判為捏造；再交由不同模型家族的 LLM 評審團投票，意見分歧標為「有爭議」。</li>
+            <li>評審本身也要被驗證：用刻意植入錯誤的已知答案集挑選模型與 prompt，並非憑感覺選。可完全離線運行（本地 Ollama），也支援期刊 PDF 語料。</li>
         </ul>
         <ul class="tag-list">
-            <li>Python</li><li>RAG</li><li>Embeddings</li><li>Semantic Search</li><li>Hallucination Evaluation</li>
+            <li>Python</li><li>RAG</li><li>Hybrid Search</li><li>ChromaDB</li><li>LLM-as-Judge</li><li>Hallucination Evaluation</li><li>Ollama</li>
         </ul>
         <p class="pub-doi" style="margin-top:14px">
             <a href="https://github.com/JamesLeeCY/paper-rag-copilot" target="_blank" rel="noopener">GitHub</a>
@@ -101,13 +103,15 @@ permalink: /projects.html
             <span class="research-badge">Text Classification</span>
             <span class="research-badge">Digital Health</span>
         </div>
-        <p>針對 LINE 群組對話的健康度分流系統：自動分析對話、計算風險指標、產出 PDF 報告。把非結構化的中文對話紀錄，變成<strong>可排序、可行動的風險訊號</strong>。</p>
+        <p>針對 LINE 工作群組對話的健康度分流系統：自動分析對話、計算風險指標、產出 PDF 優先處理報告。把非結構化的中文對話紀錄，變成<strong>可排序、可行動的風險訊號</strong>。</p>
         <ul>
-            <li>端到端 NLP 管線：資料前處理、特徵萃取、監督式分類模型。</li>
-            <li>風險分數排序與自動化報告產出。</li>
+            <li>六項指標：未回應提問年齡、客戶回應延遲 P90（皆以業務時間計算）、最老未解議題（LLM 抽取）、負面情緒比例、訊息量，以及追蹤對話主題複雜度的<strong>語義熵時間序列</strong>。</li>
+            <li>非補償性 tripwire：退款、投訴、找主管等升級訊號直接觸發，不會被其他良好指標平均掉。</li>
+            <li>資料來源支援 LINE 匯出檔、LINE Messaging API webhook 即時接收，以及 Telegram 群組匯出。</li>
+            <li>進行中：股票社群模式——以 LLM 標註多空訊號，人工只標 AI 有爭議的訊息並分層加權，再以 accuracy / macro-F1 / kappa 比較模型與人工標註。</li>
         </ul>
         <ul class="tag-list">
-            <li>Python</li><li>Chinese NLP</li><li>Text Classification</li><li>Risk Scoring</li>
+            <li>Python</li><li>Chinese NLP</li><li>Sentiment Analysis</li><li>Semantic Entropy</li><li>LLM Labeling</li><li>FastAPI</li><li>Risk Scoring</li>
         </ul>
         <p class="pub-doi" style="margin-top:14px">
             <a href="https://github.com/JamesLeeCY/line-chat-triage" target="_blank" rel="noopener">GitHub</a>
