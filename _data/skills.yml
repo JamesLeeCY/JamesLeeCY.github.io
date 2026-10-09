@@ -10,6 +10,7 @@ groups:
       - MATLAB
       - SQL
       - Shell
+      - TypeScript
       - JavaScript
 
   - title: "機器學習 / Machine Learning"
@@ -17,7 +18,6 @@ groups:
     items:
       - Supervised Learning
       - Classification & Regression
-      - Clustering
       - XGBoost
       - Graph Neural Networks
       - Time-Series Analysis
@@ -71,6 +71,17 @@ groups:
       - APIs & Webhooks (FastAPI)
       - Scheduled Pipelines & Automated Reporting
 
+  - title: "Web 開發 / Web Development"
+    style: tag
+    items:
+      - Next.js / React
+      - NestJS (Node.js)
+      - PostgreSQL & TypeORM
+      - OAuth Login (Google)
+      - Payment Gateway Integration
+      - Docker & Nginx Deployment
+      - CI/CD (GitHub Actions)
+
   - title: "評估與統計 / Evaluation & Statistics"
     style: tag
     items:
@@ -79,7 +90,7 @@ groups:
       - Model Calibration (Brier Score, ECE)
       - Leakage-Safe Temporal Splits
       - Confidence Intervals (Wilson, Block Bootstrap)
-      - Inter-Annotator Agreement (Cohen's Kappa)
+      - LLM–Human Label Agreement (Cohen's Kappa)
       - Synthetic Benchmarks with Planted Ground Truth
       - Ablation Studies
 

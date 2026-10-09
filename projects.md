@@ -7,7 +7,7 @@ permalink: /projects.html
 <div class="page-content">
     <div class="page-header">
         <h1>Projects</h1>
-        <p class="lead">將處理高維度、高雜訊資料的方法，從神經科學遷移到<strong>製造、金融與語言</strong>領域。每個專案都附完整程式碼與分析報告——包含那些「看起來成立、實際不成立」的結果。</p>
+        <p class="lead">將處理高維度、高雜訊資料的方法，從神經科學遷移到<strong>製造、金融與語言</strong>領域。公開專案都附完整程式碼與分析報告——包含那些「看起來成立、實際不成立」的結果。所有專案皆以 <strong>Claude Code</strong> 協助開發。</p>
     </div>
 
     <div class="research-item">
@@ -25,7 +25,7 @@ permalink: /projects.html
             <li>六處「表面數字說一回事、追加一個診斷說另一回事」的案例，包含這個專案自己的主要宣稱。</li>
         </ul>
         <ul class="tag-list">
-            <li>Python</li><li>XGBoost</li><li>GNN</li><li>Concept Drift</li><li>Virtual Metrology</li><li>Imbalanced Classification</li>
+            <li>Python</li><li>XGBoost</li><li>GNN</li><li>Concept Drift</li><li>Virtual Metrology</li><li>Imbalanced Classification</li><li>Claude Code</li>
         </ul>
         <p class="pub-doi" style="margin-top:14px">
             <a href="https://github.com/JamesLeeCY/semiconductor-quality-ml" target="_blank" rel="noopener">GitHub</a>
@@ -48,7 +48,7 @@ permalink: /projects.html
             <li>過度擬合控制：規則於 2026-10-09 凍結並事先登錄評估方式，程式碼指紋一改就拒絕預測，紀錄只能新增；正式前瞻紀錄自 2026-11 起累積。</li>
         </ul>
         <ul class="tag-list">
-            <li>Python</li><li>Multi-Agent</li><li>LLM</li><li>Walk-Forward Backtesting</li><li>Information Coefficient</li><li>Survivorship Bias</li><li>Deflated Sharpe</li><li>Brier Score</li>
+            <li>Python</li><li>Multi-Agent</li><li>LLM</li><li>Walk-Forward Backtesting</li><li>Information Coefficient</li><li>Survivorship Bias</li><li>Deflated Sharpe</li><li>Brier Score</li><li>Claude Code</li>
         </ul>
         <p class="pub-doi" style="margin-top:14px">
             <a href="https://github.com/JamesLeeCY/precision-weighted-investment-agent" target="_blank" rel="noopener">GitHub</a>
@@ -72,7 +72,7 @@ permalink: /projects.html
             <li>可完全離線運行（本地 Ollama），也支援期刊 PDF 語料。</li>
         </ul>
         <ul class="tag-list">
-            <li>Python</li><li>RAG</li><li>Hybrid Search</li><li>ChromaDB</li><li>LLM-as-Judge</li><li>Hallucination Evaluation</li><li>Confidence Intervals</li><li>Ollama</li>
+            <li>Python</li><li>RAG</li><li>Hybrid Search</li><li>ChromaDB</li><li>LLM-as-Judge</li><li>Hallucination Evaluation</li><li>Confidence Intervals</li><li>Ollama</li><li>Claude Code</li>
         </ul>
         <p class="pub-doi" style="margin-top:14px">
             <a href="https://github.com/JamesLeeCY/paper-rag-copilot" target="_blank" rel="noopener">GitHub</a>
@@ -92,7 +92,7 @@ permalink: /projects.html
             <li>把原始影片轉成能通過統計檢驗的迴歸變項序列，供 fMRI 分析使用。</li>
         </ul>
         <ul class="tag-list">
-            <li>Python</li><li>OpenCV</li><li>YOLOv8</li><li>HOG</li><li>Multimodal Time-Series</li>
+            <li>Python</li><li>OpenCV</li><li>YOLOv8</li><li>HOG</li><li>Multimodal Time-Series</li><li>Claude Code</li>
         </ul>
         <p class="pub-doi" style="margin-top:14px">
             <a href="https://github.com/JamesLeeCY/fmri-video-feature-analysis" target="_blank" rel="noopener">GitHub</a>
@@ -112,13 +112,35 @@ permalink: /projects.html
             <li>非補償性 tripwire：退款、投訴、找主管等升級訊號直接觸發，不會被其他良好指標平均掉。</li>
             <li>資料來源支援 LINE 匯出檔、LINE Messaging API webhook 即時接收，以及 Telegram 群組匯出。</li>
             <li>合成評估：由程式埋入標準答案（風險與誘餌）生成主管群組對話，本地 LLM 只負責改寫成台灣口語，對答案計分而非對另一個 AI 的意見計分。初步 10 組：規則系統誘餌零誤報、但漏掉換句話說的揚言；phi4 語意較好、時間推理不可靠；兩者組合後風險等級 9/10 正確（正擴充至 100 組）。</li>
-            <li>股票社群模式（約 109 萬則 Telegram 訊息）：人工標註 165 則驗證 LLM 多空標註；以標的 entropy 時間序列預測下一時間窗的話題轉移，AUC 0.62 → 0.71（95% CI 不含 0）。過程中抓出樣本數混淆——先前 AUC 0.82 的高分多半來自它。</li>
+            <li>股票社群模式（約 109 萬則 Telegram 訊息）：人工標註 165 則驗證 LLM 多空標註，LLM 標註與人工的一致性 Cohen’s κ 最高 0.42（隨機樣本）/ 0.55（加強樣本）；以標的 entropy 時間序列預測下一時間窗的話題轉移，AUC 0.62 → 0.71（95% CI 不含 0）。過程中抓出樣本數混淆——先前 AUC 0.82 的高分多半來自它。</li>
         </ul>
         <ul class="tag-list">
-            <li>Python</li><li>Chinese NLP</li><li>Semantic Entropy</li><li>LLM Labeling</li><li>Synthetic Benchmark</li><li>Walk-Forward Validation</li><li>FastAPI</li>
+            <li>Python</li><li>Chinese NLP</li><li>Semantic Entropy</li><li>LLM Labeling</li><li>Synthetic Benchmark</li><li>Walk-Forward Validation</li><li>FastAPI</li><li>Claude Code</li>
         </ul>
         <p class="pub-doi" style="margin-top:14px">
             <a href="https://github.com/JamesLeeCY/line-chat-triage" target="_blank" rel="noopener">GitHub</a>
+        </p>
+    </div>
+
+    <div class="research-item">
+        <h3>國際會議線上報名與金流系統 <span class="text-muted">/ PACLIC 40 Registration</span></h3>
+        <div class="research-meta">
+            <span class="research-badge">Full-Stack Web</span>
+            <span class="research-badge">Payment Integration</span>
+            <span class="research-badge">Production Operations</span>
+        </div>
+        <p>第 40 屆 PACLIC（Pacific Asia Conference on Language, Information and Computation，2026/12 於台大舉辦）的線上報名與繳費系統，2026-10-01 正式上線。以既有會議報名系統為基礎，與團隊協作開發，我負責後端功能與上線維運。</p>
+        <ul>
+            <li>流程：Google 登入 → 報名表 → 學生上傳學生證 → 藍新金流（NewebPay）刷卡；主辦方後台審核學生證、匯出 CSV 名單。</li>
+            <li>計價改為查表式：新費率的早鳥／一般價差在不同級距不一致，用單一折扣公式算不出來；早鳥資格以付款完成時間判定，截止後自動關閉報名與付款。</li>
+            <li>個資保護：學生證於會後依保存期限自動刪除。</li>
+            <li>部署與維運：Docker Compose + Nginx、GitHub Actions CI、需手動確認的正式部署流程、資料庫排程備份與還原演練。</li>
+        </ul>
+        <ul class="tag-list">
+            <li>TypeScript</li><li>JavaScript</li><li>NestJS</li><li>Next.js</li><li>React</li><li>PostgreSQL</li><li>TypeORM</li><li>Zod</li><li>Docker</li><li>GitHub Actions</li><li>Claude Code</li>
+        </ul>
+        <p class="pub-doi" style="margin-top:14px">
+            <a href="https://registration.linguistics.ntu.edu.tw" target="_blank" rel="noopener">正式站 ↗</a>
         </p>
     </div>
 

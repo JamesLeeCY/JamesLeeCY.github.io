@@ -65,6 +65,13 @@ contact.md             聯絡方式
   幻覺評估、LLM-as-Judge、LLM 標註與人工驗證。
 - Research 頁對齊最新專案（2026-10-10）：三段「方法遷移」改為連到實際專案；
   CNS 2020 地點改為 Virtual，與 Publications 一致。
+- Projects 新增第六張卡 PACLIC 40 報名與金流系統（2026-10-10）：repo 私有
+  （ioltw/paclic-backend、ioltw/paclic-frontend），卡片只連正式站，不連 repo、
+  不寫報名人數或主辦方人員等營運資訊。每張卡加上 Claude Code 標籤，頁首註明
+  所有專案皆以 Claude Code 協助開發。
+- 技能：移除 Clustering；新增 TypeScript 與「Web 開發」分組（對應 PACLIC）；
+  kappa 改稱「LLM–Human Label Agreement」（只有一位人工標註者，不是標註者間一致性），
+  LINE 卡片補上 κ 最高 0.42（隨機，Qwen3 v1）/ 0.55（加強，Qwen3 v2），兩個數字來自不同提示詞版本。
 
 ## 4. 待辦事項
 
@@ -79,10 +86,10 @@ contact.md             聯絡方式
    站內連結一律用 `relative_url`。改聯絡方式只需改 `_config.yml`。
 3. **Projects 與 repo 同步**：五個專案（semiconductor-quality-ml、
    precision-weighted-investment-agent、paper-rag-copilot、fmri-video-feature-analysis、
-   line-chat-triage）若有新成果或指標，記得回頭更新 `projects.md`。
+   line-chat-triage，以及私有的 PACLIC 40）若有新成果或指標，記得回頭更新 `projects.md`。
    - LINE Triage 的合成評估目前只有 10 組（卡片已註明「初步」），跑滿 100 組並經
      Claude 驗證後更新數字。
    - 投資 Agent 前瞻驗證 2026-11 起有正式紀錄，累積幾期後可補上 live IC。
    - RAG Copilot 的語料是未發表論文，網站只寫方法與彙總指標，不寫論文內容。
    - 私有 repo（fmri-db、brain-forest-exposure-study3、ntsec-forest-fmri、
-     WQ_open_machine_taiwan 等）不放上網站。
+     WQ_open_machine_taiwan 等）不放上網站。例外：PACLIC 40 經使用者同意列出，只連正式站。
