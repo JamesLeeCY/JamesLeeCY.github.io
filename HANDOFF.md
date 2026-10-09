@@ -61,6 +61,8 @@ contact.md             聯絡方式
   知識圖譜、向量資料庫、FastAPI、信賴區間、標註一致性等；新增「量化研究」分組
   （walk-forward、IC、無選股偏誤股票池、Deflated Sharpe、前瞻驗證）。只列 repo
   README 裡確實用到的技術。
+- 技能區塊新增「LLM 評估」分組（2026-10-10），從「AI 與 LLM」拆出：檢索指標、引用精確率、
+  幻覺評估、LLM-as-Judge、LLM 標註與人工驗證。
 
 ## 4. 待辦事項
 

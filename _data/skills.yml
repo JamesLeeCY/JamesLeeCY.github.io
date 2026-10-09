@@ -34,15 +34,20 @@ groups:
       - Hybrid Search (Dense + BM25, RRF)
       - Prompt & Context Engineering
       - Multi-Agent Systems
-      - LLM Evaluation
-      - Hallucination Evaluation
-      - LLM-as-Judge & Judge Validation
-      - LLM Data Labeling with Human Validation
       - Local LLM Deployment (Ollama)
       - Knowledge Graphs
       - NLP / Text Classification
       - Chinese NLP
       - Claude Code
+
+  - title: "LLM 評估 / LLM Evaluation"
+    style: tag
+    items:
+      - RAG Retrieval Metrics (Hit@k, MRR)
+      - Citation Grounding & Precision
+      - Hallucination Evaluation
+      - LLM-as-Judge & Judge Validation
+      - LLM Data Labeling with Human Validation
 
   - title: "電腦視覺與訊號處理 / Computer Vision & Signal"
     style: tag
