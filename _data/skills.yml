@@ -24,15 +24,22 @@ groups:
       - Anomaly Detection
       - Imbalanced Classification
       - Concept Drift
+      - Information-Theoretic Features (Entropy, JS Divergence)
 
   - title: "AI 與 LLM / AI & LLM"
     style: tag
     items:
       - RAG (Retrieval-Augmented Generation)
       - Embeddings & Semantic Search
+      - Hybrid Search (Dense + BM25, RRF)
+      - Prompt & Context Engineering
       - Multi-Agent Systems
       - LLM Evaluation
       - Hallucination Evaluation
+      - LLM-as-Judge & Judge Validation
+      - LLM Data Labeling with Human Validation
+      - Local LLM Deployment (Ollama)
+      - Knowledge Graphs
       - NLP / Text Classification
       - Chinese NLP
       - Claude Code
@@ -55,6 +62,9 @@ groups:
       - Pipeline Development
       - Cross-Site Data Integration
       - Database Management (Shell/SQL)
+      - Vector Databases (ChromaDB)
+      - APIs & Webhooks (FastAPI)
+      - Scheduled Pipelines & Automated Reporting
 
   - title: "評估與統計 / Evaluation & Statistics"
     style: tag
@@ -62,8 +72,21 @@ groups:
       - Experimental Design
       - Statistical Modeling
       - Model Calibration (Brier Score, ECE)
-      - Walk-Forward Backtesting
       - Leakage-Safe Temporal Splits
+      - Confidence Intervals (Wilson, Block Bootstrap)
+      - Inter-Annotator Agreement (Cohen's Kappa)
+      - Synthetic Benchmarks with Planted Ground Truth
+      - Ablation Studies
+
+  - title: "量化研究 / Quantitative Research"
+    style: tag
+    items:
+      - Walk-Forward Backtesting
+      - Information Coefficient (IC)
+      - Survivorship-Bias-Free Universes
+      - Sector-Neutral Portfolios
+      - Overfitting Controls (Out-of-Sample, Deflated Sharpe)
+      - Pre-Registered Forward Validation
 
   - title: "研究方法 / Research Methods"
     style: method
