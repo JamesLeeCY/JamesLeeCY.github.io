@@ -64,15 +64,16 @@ permalink: /projects.html
         </div>
         <p>針對學術文獻庫的嚴格引用溯源 RAG 助理，內建可量化的幻覺率評估。<strong>檢索是簡單的那一半</strong>——能量化幻覺率，才是這個系統可以被信任的原因。</p>
         <ul>
+            <li>Prompt 與 context engineering：生成端用強制引用的 XML prompt，每個宣稱都必須附段落編號與逐字引文，否則只能回覆固定的拒答語句；評審只看宣稱與段落、看不到生成端的推理，避免自我背書。評審 prompt 依驗證集上量到的失誤逐版改進（v1 → v2 誤放率 27% → 4%）。</li>
             <li>混合檢索（dense embeddings ⊕ BM25，RRF 融合）：學術文字充滿 <code>ISFC</code>、<code>TFCE</code> 這類精確術語，純語意向量會把它們模糊掉。</li>
             <li>切塊消融實驗：依章節結構切塊在 26 題人工 golden set 上達 <strong>Hit@5 100% / MRR 0.952</strong>，固定長度基準為 88% / 0.794。</li>
             <li>驗證層由便宜到昂貴：逐字引文必須出現在被檢索的段落中，否則判為捏造；再交由 LLM 評審判定；另有規則檢查專抓「把研究計畫寫成研究結果」，送人工複核。</li>
             <li>評審本身也要被驗證：用刻意植入錯誤的已知答案集比較模型與 prompt，選出 phi4（誤放率 5%，95% CI 2–15%）；生成模型評自己的輸出反而最弱。</li>
-            <li>逐則稽核系統錯誤後修正跨段引文與段落標題，嚴格引用精確率 84% → <strong>97%</strong>（30/31）；所有比率都附 Wilson 信賴區間，並註明小樣本下差異多半不顯著。至今沒有任何錯誤宣稱以「有出處支持」的狀態呈現給使用者。</li>
+            <li>逐則稽核系統錯誤，發現問題出在 context 而非模型（段落缺少章節標題、引文跨段），補上後嚴格引用精確率 84% → <strong>97%</strong>（30/31）；所有比率都附 Wilson 信賴區間，並註明小樣本下差異多半不顯著。至今沒有任何錯誤宣稱以「有出處支持」的狀態呈現給使用者。</li>
             <li>可完全離線運行（本地 Ollama），也支援期刊 PDF 語料。</li>
         </ul>
         <ul class="tag-list">
-            <li>Python</li><li>RAG</li><li>Hybrid Search</li><li>ChromaDB</li><li>LLM-as-Judge</li><li>Hallucination Evaluation</li><li>Confidence Intervals</li><li>Ollama</li><li>Claude Code</li>
+            <li>Python</li><li>RAG</li><li>Prompt Engineering</li><li>Context Engineering</li><li>Hybrid Search</li><li>ChromaDB</li><li>LLM-as-Judge</li><li>Hallucination Evaluation</li><li>Confidence Intervals</li><li>Ollama</li><li>Claude Code</li>
         </ul>
         <p class="pub-doi" style="margin-top:14px">
             <a href="https://github.com/JamesLeeCY/paper-rag-copilot" target="_blank" rel="noopener">GitHub</a>

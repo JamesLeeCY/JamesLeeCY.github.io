@@ -21,12 +21,13 @@ permalink: /research.html
         <ul>
             <li>以 <strong>Python</strong> 建立虛擬實境 (VR) 實驗環境，量測自然暴露對年長者認知功能的效益。</li>
             <li>Brandeis University 訪問學者期間，評估短期影片自然暴露的認知效果。</li>
-            <li>把原始影片以每個 TR（0.752 秒）為單位，拆成低階視覺、動態、語義與物件層級的特徵序列，與 fMRI 時序對齊成可檢定的迴歸變項。</li>
+            <li>把原始影片依掃描器取樣週期（TR = 0.752 秒，900 個時間點）重新取樣，拆成低階視覺、動態、語義與物件層級的特徵序列，與 fMRI 時序對齊成可檢定的迴歸變項。</li>
+            <li>訊號處理：以相鄰影格差分計算動態能量、以 Shannon entropy 量化空間與時間上的不可預測性、以滑動視窗追蹤語義變化，並用功率頻譜密度（PSD）比較兩類刺激的時間頻率結構。</li>
             <li>發表：Psychonomics Society Annual Meeting, NYC (2024)。</li>
         </ul>
-        <p class="research-transfer"><strong>方法遷移：</strong>多模態特徵工程、把非結構化訊號轉成可建模的時序變項——同一套作法用在 <a href="https://github.com/JamesLeeCY/semiconductor-quality-ml" target="_blank" rel="noopener">CMP 製程感測序列</a>的虛擬量測，以及 <a href="https://github.com/JamesLeeCY/line-chat-triage" target="_blank" rel="noopener">聊天群組的話題 entropy 時間序列</a>（以 entropy 預測下一時間窗的話題轉移）。</p>
+        <p class="research-transfer"><strong>方法遷移：</strong>訊號處理與多模態特徵工程——取樣對齊、差分、entropy、頻譜分析，把非結構化訊號轉成可建模的時序變項——同一套作法用在 <a href="https://github.com/JamesLeeCY/semiconductor-quality-ml" target="_blank" rel="noopener">CMP 製程感測序列</a>的虛擬量測，以及 <a href="https://github.com/JamesLeeCY/line-chat-triage" target="_blank" rel="noopener">聊天群組的話題 entropy 時間序列</a>（以 entropy 預測下一時間窗的話題轉移）。</p>
         <ul class="tag-list">
-            <li>Python</li><li>VR Experimental Design</li><li>OpenCV</li><li>YOLOv8</li><li>Multimodal Time-Series</li>
+            <li>Python</li><li>VR Experimental Design</li><li>Signal Processing</li><li>OpenCV</li><li>YOLOv8</li><li>Multimodal Time-Series</li>
         </ul>
         <p class="pub-doi" style="margin-top:14px">
             <a href="https://github.com/JamesLeeCY/fmri-video-feature-analysis" target="_blank" rel="noopener">相關程式碼 ↗</a>
@@ -44,12 +45,12 @@ permalink: /research.html
         <ul>
             <li>以 <strong>Python</strong> 設計可在兩地同步執行的跨國實驗流程。</li>
             <li>用 <strong>Shell</strong> 與 <strong>SQL</strong> 建立資料庫，讓跨伺服器的資料共享與版本控制可行。</li>
-            <li>跨站點 multiband fMRI 訊號的驗證與校準——不同掃描站點之間的系統性差異若不先校正，後續所有組間比較都不成立。</li>
+            <li>跨站點 multiband fMRI 訊號的驗證與校準：同一批受試者在台、美兩地以相同型號的 3T 掃描器重複視覺與動作任務，再以 ANOVA 拆解受試者、任務與站點效應——不同掃描站點之間的系統性差異若不先校正，後續所有組間比較都不成立。</li>
             <li>發表：<em>Biological Psychology</em> (2021)；<em>Clinical Cultural Neuroscience</em> 書籍章節 (Oxford University Press, 2019)；Cognitive Neuroscience Society Annual Meeting, Virtual (2020)。</li>
         </ul>
         <p class="research-transfer"><strong>方法遷移：</strong>跨站點資料整合與批次效應校正、資料管線與 QC 流程——對應到跨廠、跨機台、跨資料源整合時的同一個問題。研究「人在機率與價值下如何決策」的訓練，則直接帶進 <a href="https://github.com/JamesLeeCY/precision-weighted-investment-agent" target="_blank" rel="noopener">多代理人投資研究系統</a>：每個判斷都是機率，用 Brier score 與校準曲線評估，而不只看對錯。</p>
         <ul class="tag-list">
-            <li>Python</li><li>Shell</li><li>SQL</li><li>Cross-Site Data Integration</li><li>Data QC Pipelines</li>
+            <li>Python</li><li>Shell</li><li>SQL</li><li>fMRI Signal Calibration</li><li>Cross-Site Data Integration</li><li>Data QC Pipelines</li>
         </ul>
         <p class="pub-doi" style="margin-top:14px">
             <a href="https://doi.org/10.1016/j.biopsycho.2021.108209" target="_blank" rel="noopener">DOI ↗</a>

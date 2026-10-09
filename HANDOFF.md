@@ -74,6 +74,14 @@ contact.md             聯絡方式
   LINE 卡片補上 κ 最高 0.42（隨機，Qwen3 v1）/ 0.55（加強，Qwen3 v2），兩個數字來自不同提示詞版本。
 - 技能 Model Calibration 拿掉 ECE（網站已無對應）；投資 Agent 卡片補上每月排程自動執行
   前瞻驗證並重建研究儀表板，對應 Scheduled Pipelines。
+- 技能對應補強（2026-10-10）：
+  - Prompt & Context Engineering：RAG 卡片補上強制引用的 XML prompt、隔離的評審 context、
+    評審 prompt 逐版改進；同時在 paper-rag-copilot README 新增
+    「Prompt & context engineering」一節（commit 10dc3da）。
+  - Signal Processing：Research 頁補上影片依 TR 重新取樣、影格差分、entropy、PSD，
+    以及跨站點 fMRI 訊號校準的實驗設計（依據：fmri-video-feature-analysis README、
+    CNS 2020 摘要）。
+  至此技能區塊每一項都能在 Projects 或 Research 頁找到對應。
 
 ## 4. 待辦事項
 
