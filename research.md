@@ -24,7 +24,7 @@ permalink: /research.html
             <li>把原始影片以每個 TR（0.752 秒）為單位，拆成低階視覺、動態、語義與物件層級的特徵序列，與 fMRI 時序對齊成可檢定的迴歸變項。</li>
             <li>發表：Psychonomics Society Annual Meeting, NYC (2024)。</li>
         </ul>
-        <p class="research-transfer"><strong>方法遷移：</strong>多模態特徵工程、非結構化訊號轉可建模變項、時序對齊——同一套作法用在製造製程的感測訊號序列上。</p>
+        <p class="research-transfer"><strong>方法遷移：</strong>多模態特徵工程、把非結構化訊號轉成可建模的時序變項——同一套作法用在 <a href="https://github.com/JamesLeeCY/semiconductor-quality-ml" target="_blank" rel="noopener">CMP 製程感測序列</a>的虛擬量測，以及 <a href="https://github.com/JamesLeeCY/line-chat-triage" target="_blank" rel="noopener">聊天群組的話題 entropy 時間序列</a>（以 entropy 預測下一時間窗的話題轉移）。</p>
         <ul class="tag-list">
             <li>Python</li><li>VR Experimental Design</li><li>OpenCV</li><li>YOLOv8</li><li>Multimodal Time-Series</li>
         </ul>
@@ -45,9 +45,9 @@ permalink: /research.html
             <li>以 <strong>Python</strong> 設計可在兩地同步執行的跨國實驗流程。</li>
             <li>用 <strong>Shell</strong> 與 <strong>SQL</strong> 建立資料庫，讓跨伺服器的資料共享與版本控制可行。</li>
             <li>跨站點 multiband fMRI 訊號的驗證與校準——不同掃描站點之間的系統性差異若不先校正，後續所有組間比較都不成立。</li>
-            <li>發表：<em>Biological Psychology</em> (2021)；<em>Clinical Cultural Neuroscience</em> 書籍章節 (Oxford University Press, 2019)；Cognitive Neuroscience Society Annual Meeting, Boston (2020)。</li>
+            <li>發表：<em>Biological Psychology</em> (2021)；<em>Clinical Cultural Neuroscience</em> 書籍章節 (Oxford University Press, 2019)；Cognitive Neuroscience Society Annual Meeting, Virtual (2020)。</li>
         </ul>
-        <p class="research-transfer"><strong>方法遷移：</strong>跨站點資料整合與批次效應校正、資料管線與 QC 流程——對應到跨廠、跨機台、跨資料源整合時的同一個問題。</p>
+        <p class="research-transfer"><strong>方法遷移：</strong>跨站點資料整合與批次效應校正、資料管線與 QC 流程——對應到跨廠、跨機台、跨資料源整合時的同一個問題。研究「人在機率與價值下如何決策」的訓練，則直接帶進 <a href="https://github.com/JamesLeeCY/precision-weighted-investment-agent" target="_blank" rel="noopener">多代理人投資研究系統</a>：每個判斷都是機率，用 Brier score 與校準曲線評估，而不只看對錯。</p>
         <ul class="tag-list">
             <li>Python</li><li>Shell</li><li>SQL</li><li>Cross-Site Data Integration</li><li>Data QC Pipelines</li>
         </ul>
@@ -69,7 +69,7 @@ permalink: /research.html
             <li>以 <strong>MATLAB</strong> 與 <strong>R</strong> 開發自動化管線，處理並分析行為與 fMRI 資料。</li>
             <li>發表：<em>Journal of Psychiatry and Neuroscience</em> (2023)。</li>
         </ul>
-        <p class="research-transfer"><strong>方法遷移：</strong>小樣本、高維度、組別不平衡下的統計建模與多重比較校正；端到端自動化分析管線——這是後來所有專案的底層習慣。</p>
+        <p class="research-transfer"><strong>方法遷移：</strong>小樣本、高維度、組別不平衡下的統計建模與多重比較校正；端到端自動化分析管線——這是後來所有專案的底層習慣：<a href="https://github.com/JamesLeeCY/paper-rag-copilot" target="_blank" rel="noopener">RAG 系統</a>的每個比率都附信賴區間，<a href="https://github.com/JamesLeeCY/precision-weighted-investment-agent" target="_blank" rel="noopener">量化回測</a>用 Deflated Sharpe 扣掉嘗試次數，<a href="https://github.com/JamesLeeCY/line-chat-triage" target="_blank" rel="noopener">對話預測</a>以區塊 bootstrap 估計增益的不確定性。</p>
         <ul class="tag-list">
             <li>MATLAB</li><li>R</li><li>Statistical Modeling</li><li>Experimental Design</li><li>Pipeline Development</li>
         </ul>

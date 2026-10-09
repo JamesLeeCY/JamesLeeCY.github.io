@@ -63,6 +63,8 @@ contact.md             聯絡方式
   README 裡確實用到的技術。
 - 技能區塊新增「LLM 評估」分組（2026-10-10），從「AI 與 LLM」拆出：檢索指標、引用精確率、
   幻覺評估、LLM-as-Judge、LLM 標註與人工驗證。
+- Research 頁對齊最新專案（2026-10-10）：三段「方法遷移」改為連到實際專案；
+  CNS 2020 地點改為 Virtual，與 Publications 一致。
 
 ## 4. 待辦事項
 
