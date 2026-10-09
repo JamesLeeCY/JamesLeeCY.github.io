@@ -1,6 +1,6 @@
 # Handoff — JamesLeeCY.github.io
 
-狀態更新於 **2026-10-06**。接手時先讀這份。README 是給訪客看的簡介；這份記錄架構、
+狀態更新於 **2026-10-10**。接手時先讀這份。README 是給訪客看的簡介；這份記錄架構、
 目前定位、以及待辦事項。
 
 ---
@@ -49,6 +49,14 @@ contact.md             聯絡方式
   切塊消融（Hit@5 100% vs 88%）、引文驗證與評審團；LINE Triage 改正為
   六項指標 + tripwire 的設計（原寫「監督式分類」不符），補上 webhook / Telegram
   匯入與進行中的股票社群模式。投資 Agent、半導體、fMRI 影像三個專案內容未變。
+- 第二次同步 Projects（2026-10-10，對照各 repo 10/06–10/09 的 commit 與 README）：
+  - 投資 Agent：改寫結論。舊卡片的 Brier 0.2530 vs 0.2529 已過時；現在主軸是
+    271 檔無選股偏誤股票池、Sharpe 全低於 0050、精度加權從未奏效、只有財報 Agent
+    產業內選股站得住（IC +0.029）、規則已凍結做前瞻驗證（正式紀錄 2026-11 起）。
+  - RAG Copilot：預設評審改為 phi4；嚴格引用精確率 84% → 97%；加上信賴區間與
+    「計畫寫成結果」規則檢查。
+  - LINE Triage：股票社群模式從「進行中」改為實際結果（entropy 預測話題轉移
+    AUC 0.62 → 0.71）；新增合成主管群組評估（初步 10 組）。
 
 ## 4. 待辦事項
 
@@ -60,7 +68,9 @@ contact.md             聯絡方式
 3. **Projects 與 repo 同步**：五個專案（semiconductor-quality-ml、
    precision-weighted-investment-agent、paper-rag-copilot、fmri-video-feature-analysis、
    line-chat-triage）若有新成果或指標，記得回頭更新 `projects.md`。
-   - LINE Triage 的股票社群模式目前標為「進行中」，人工標註與模型比較有結果後再補數字。
+   - LINE Triage 的合成評估目前只有 10 組（卡片已註明「初步」），跑滿 100 組並經
+     Claude 驗證後更新數字。
+   - 投資 Agent 前瞻驗證 2026-11 起有正式紀錄，累積幾期後可補上 live IC。
    - RAG Copilot 的語料是未發表論文，網站只寫方法與彙總指標，不寫論文內容。
    - 私有 repo（fmri-db、brain-forest-exposure-study3、ntsec-forest-fmri、
      WQ_open_machine_taiwan 等）不放上網站。

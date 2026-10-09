@@ -37,17 +37,18 @@ permalink: /projects.html
         <h3>多代理人精度加權投資研究系統 <span class="text-muted">/ Precision-Weighted Multi-Agent</span></h3>
         <div class="research-meta">
             <span class="research-badge">Multi-Agent LLM</span>
-            <span class="research-badge">Calibration</span>
-            <span class="research-badge">Quantitative Finance</span>
+            <span class="research-badge">Quantitative Research</span>
+            <span class="research-badge">Forward Validation</span>
         </div>
-        <p>借用神經科學<strong>預測處理框架</strong>中的 precision weighting 概念：多個專家 Agent（財報、新聞事件）各自產出帶信心值的判斷，仲裁層依各 Agent 的歷史準確度（Brier score EMA 的倒數）動態加權合成。系統從均等權重隨證據累積收斂到以可靠來源為主導。</p>
+        <p>借用神經科學<strong>預測處理框架</strong>中的 precision weighting 概念：財報、新聞、總經／籌碼、供應鏈（知識圖譜）、技術面等專家 Agent 各自產出帶信心值的判斷，仲裁層依各 Agent 的歷史準確度（Brier score EMA 的倒數）動態加權合成。LLM 判讀可接 Claude 或本地 qwen3:8b。</p>
         <ul>
-            <li>走時序回測：FinMind 真實資料，5 檔被動元件標的、2024-01 至 2026-05、135 個預測事件。</li>
-            <li>以 Brier score、方向準確率、ECE（期望校準誤差）三項評估，而非只看準確率。</li>
-            <li><strong>誠實結論：</strong>精度加權只在來源可靠度實質分化時勝出（synthetic 驗證 17/20 seeds）。真實回測中各 Agent 可靠度相近，它並未贏過簡單平均（0.2530 vs 0.2529）。</li>
+            <li>無選股偏誤股票池：271 檔、每年依當時成交值取前 100 檔並含下市股，2019–2026 共 8,475 筆 walk-forward 預測；財報設公告遞延，杜絕 look-ahead。</li>
+            <li><strong>誠實結論：</strong>方向準確率低於「永遠猜上漲」，所有策略的 Sharpe 都低於 0050。精度加權在真實資料上從未奏效——每期 IC 的標準差是平均的 4 倍，估計「誰比較可靠」的誤差和訊號本身一樣大。</li>
+            <li>唯一站得住的訊號：財報 Agent 的產業內選股（IC +0.029，t 2.16），產業中性做多扣成本後每期 +0.26%。但樣本外 IR 只剩樣本內的 1/6–1/3，扣掉嘗試次數的 Deflated Sharpe 不顯著。</li>
+            <li>過度擬合控制：規則於 2026-10-09 凍結並事先登錄評估方式，程式碼指紋一改就拒絕預測，紀錄只能新增；正式前瞻紀錄自 2026-11 起累積。</li>
         </ul>
         <ul class="tag-list">
-            <li>Python</li><li>LLM</li><li>Multi-Agent</li><li>Brier Score</li><li>ECE</li><li>Walk-Forward Backtesting</li>
+            <li>Python</li><li>Multi-Agent</li><li>LLM</li><li>Walk-Forward Backtesting</li><li>Information Coefficient</li><li>Survivorship Bias</li><li>Deflated Sharpe</li><li>Brier Score</li>
         </ul>
         <p class="pub-doi" style="margin-top:14px">
             <a href="https://github.com/JamesLeeCY/precision-weighted-investment-agent" target="_blank" rel="noopener">GitHub</a>
@@ -65,11 +66,13 @@ permalink: /projects.html
         <ul>
             <li>混合檢索（dense embeddings ⊕ BM25，RRF 融合）：學術文字充滿 <code>ISFC</code>、<code>TFCE</code> 這類精確術語，純語意向量會把它們模糊掉。</li>
             <li>切塊消融實驗：依章節結構切塊在 26 題人工 golden set 上達 <strong>Hit@5 100% / MRR 0.952</strong>，固定長度基準為 88% / 0.794。</li>
-            <li>驗證層由便宜到昂貴：每個宣稱的逐字引文必須出現在被引段落中，否則判為捏造；再交由不同模型家族的 LLM 評審團投票，意見分歧標為「有爭議」。</li>
-            <li>評審本身也要被驗證：用刻意植入錯誤的已知答案集挑選模型與 prompt，並非憑感覺選。可完全離線運行（本地 Ollama），也支援期刊 PDF 語料。</li>
+            <li>驗證層由便宜到昂貴：逐字引文必須出現在被檢索的段落中，否則判為捏造；再交由 LLM 評審判定；另有規則檢查專抓「把研究計畫寫成研究結果」，送人工複核。</li>
+            <li>評審本身也要被驗證：用刻意植入錯誤的已知答案集比較模型與 prompt，選出 phi4（誤放率 5%，95% CI 2–15%）；生成模型評自己的輸出反而最弱。</li>
+            <li>逐則稽核系統錯誤後修正跨段引文與段落標題，嚴格引用精確率 84% → <strong>97%</strong>（30/31）；所有比率都附 Wilson 信賴區間，並註明小樣本下差異多半不顯著。至今沒有任何錯誤宣稱以「有出處支持」的狀態呈現給使用者。</li>
+            <li>可完全離線運行（本地 Ollama），也支援期刊 PDF 語料。</li>
         </ul>
         <ul class="tag-list">
-            <li>Python</li><li>RAG</li><li>Hybrid Search</li><li>ChromaDB</li><li>LLM-as-Judge</li><li>Hallucination Evaluation</li><li>Ollama</li>
+            <li>Python</li><li>RAG</li><li>Hybrid Search</li><li>ChromaDB</li><li>LLM-as-Judge</li><li>Hallucination Evaluation</li><li>Confidence Intervals</li><li>Ollama</li>
         </ul>
         <p class="pub-doi" style="margin-top:14px">
             <a href="https://github.com/JamesLeeCY/paper-rag-copilot" target="_blank" rel="noopener">GitHub</a>
@@ -108,10 +111,11 @@ permalink: /projects.html
             <li>六項指標：未回應提問年齡、客戶回應延遲 P90（皆以業務時間計算）、最老未解議題（LLM 抽取）、負面情緒比例、訊息量，以及追蹤對話主題複雜度的<strong>語義熵時間序列</strong>。</li>
             <li>非補償性 tripwire：退款、投訴、找主管等升級訊號直接觸發，不會被其他良好指標平均掉。</li>
             <li>資料來源支援 LINE 匯出檔、LINE Messaging API webhook 即時接收，以及 Telegram 群組匯出。</li>
-            <li>進行中：股票社群模式——以 LLM 標註多空訊號，人工只標 AI 有爭議的訊息並分層加權，再以 accuracy / macro-F1 / kappa 比較模型與人工標註。</li>
+            <li>合成評估：由程式埋入標準答案（風險與誘餌）生成主管群組對話，本地 LLM 只負責改寫成台灣口語，對答案計分而非對另一個 AI 的意見計分。初步 10 組：規則系統誘餌零誤報、但漏掉換句話說的揚言；phi4 語意較好、時間推理不可靠；兩者組合後風險等級 9/10 正確（正擴充至 100 組）。</li>
+            <li>股票社群模式（約 109 萬則 Telegram 訊息）：人工標註 165 則驗證 LLM 多空標註；以標的 entropy 時間序列預測下一時間窗的話題轉移，AUC 0.62 → 0.71（95% CI 不含 0）。過程中抓出樣本數混淆——先前 AUC 0.82 的高分多半來自它。</li>
         </ul>
         <ul class="tag-list">
-            <li>Python</li><li>Chinese NLP</li><li>Sentiment Analysis</li><li>Semantic Entropy</li><li>LLM Labeling</li><li>FastAPI</li><li>Risk Scoring</li>
+            <li>Python</li><li>Chinese NLP</li><li>Semantic Entropy</li><li>LLM Labeling</li><li>Synthetic Benchmark</li><li>Walk-Forward Validation</li><li>FastAPI</li>
         </ul>
         <p class="pub-doi" style="margin-top:14px">
             <a href="https://github.com/JamesLeeCY/line-chat-triage" target="_blank" rel="noopener">GitHub</a>
