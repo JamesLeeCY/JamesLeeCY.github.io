@@ -60,8 +60,12 @@ contact.md             聯絡方式
 
 ## 4. 待辦事項
 
-1. **補發表連結**：`_data/publications.yml` 中書籍章節與兩筆會議發表的 `link` 仍為空
-   （頁面會自動隱藏空連結，不會壞，但缺內容）。
+1. ~~補發表連結~~（2026-10-10 完成）：書籍章節連到 OUP 書籍頁（第 6 章，無章節 DOI）；
+   兩筆會議連到官方摘要集 PDF 的對應頁（CNS 2020 p.86 海報 C92、Psychonomics 2024
+   p.313 海報 3067）。同時把書名副標更正為 OUP 官方的
+   *An Integrative Approach to Cross-Cultural Neuropsychology*。
+   - 待確認：Psychonomics 2024 摘要集的作者順序是 Lee, Goh, Yu, Gutchess，
+     資料檔寫的是 Lee, Yu, Gutchess, Goh。
 2. **首頁寫死的路徑與 email**：`index.html` 的 `/projects.html`、`/publications.html`
    未用 `relative_url`，email 未用 `site.email`。改 email 時需同時改兩處，
    或改為引用 `site.email`。

@@ -23,11 +23,11 @@ book_chapters:
   # 書籍章節
   - title: "Visual cognition and culture."
     authors: "Goh, J. O. S., Lee, C. Y., Tu, Y. Z., Dallaire-Théroux, C."
-    book: "Clinical Cultural Neuroscience: Foundations and Neuropsychological Assessment."
+    book: "Clinical Cultural Neuroscience: An Integrative Approach to Cross-Cultural Neuropsychology."
     editor: "Otto Pedraza"
     publisher: "Oxford University Press, NY, USA"
     year: 2019
-    link: ""  # 請填入實際連結
+    link: "https://global.oup.com/academic/product/clinical-cultural-neuroscience-9780190619305"  # Chapter 6
     # citations: [53, 54]
 
 conferences_presentations:
@@ -37,7 +37,7 @@ conferences_presentations:
     event: "Annual Meeting for the Cognitive Neuroscience Society"
     location: "Boston, MA, USA"
     year: 2020
-    link: ""  # 請填入 PDF 連結
+    link: "https://www.cogneurosociety.org/wp-content/uploads/2020/03/CNS-2020-Abstract-Book.pdf#page=86"  # Poster C92
     # citations: [57, 58, 59]
   
   # 會議發表 2
@@ -46,5 +46,5 @@ conferences_presentations:
     event: "Annual Meeting for Psychonomics Society"
     location: "NYC, NY, USA"
     year: 2024
-    link: ""  # 請填入 PDF 連結
+    link: "https://cdn.ymaws.com/www.psychonomic.org/resource/resmgr/annual_meeting/2024_meeting/abstract_book/2024_abstracts_final.pdf#page=313"  # Poster 3067
     # citations: [61, 62, 64]
