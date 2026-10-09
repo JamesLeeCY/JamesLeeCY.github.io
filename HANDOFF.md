@@ -64,8 +64,8 @@ contact.md             聯絡方式
    兩筆會議連到官方摘要集 PDF 的對應頁（CNS 2020 p.86 海報 C92、Psychonomics 2024
    p.313 海報 3067）。同時把書名副標更正為 OUP 官方的
    *An Integrative Approach to Cross-Cultural Neuropsychology*。
-   - 待確認：Psychonomics 2024 摘要集的作者順序是 Lee, Goh, Yu, Gutchess，
-     資料檔寫的是 Lee, Yu, Gutchess, Goh。
+   - Psychonomics 2024 作者順序已依摘要集改為 Lee, Goh, Yu, Gutchess；
+     CNS 2020 地點改為 Virtual（原定 Boston，因疫情改線上）。
 2. **首頁寫死的路徑與 email**：`index.html` 的 `/projects.html`、`/publications.html`
    未用 `relative_url`，email 未用 `site.email`。改 email 時需同時改兩處，
    或改為引用 `site.email`。
