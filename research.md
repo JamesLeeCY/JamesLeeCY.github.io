@@ -7,7 +7,7 @@ permalink: /research.html
 <div class="page-content">
     <div class="page-header">
         <h1>Research</h1>
-        <p class="lead">十年神經科學訓練，處理的其實是同一類問題：<strong>樣本少、維度高、雜訊大、效果量小</strong>。這一頁是三條研究主線，以及每一條留下哪些可以帶走的方法。實際遷移到製造、金融與語言資料上的成果，在 <a href="/projects.html">Projects</a>。</p>
+        <p class="lead">十年神經科學訓練，處理的其實是同一類問題：<strong>樣本少、維度高、雜訊大、效果量小</strong>。這一頁是三條研究主線，以及每一條留下哪些可以帶走的方法。實際遷移到製造、金融與語言資料上的成果，在 <a href="{{ '/projects.html' | relative_url }}">Projects</a>。</p>
     </div>
 
     <div class="research-item">
@@ -81,6 +81,6 @@ permalink: /research.html
     <div class="divider"></div>
 
     <p class="text-muted" style="text-align:center">
-        完整發表清單見 <a href="/publications.html">Publications</a>；把這些方法用在產業資料上的成果見 <a href="/projects.html">Projects</a>。
+        完整發表清單見 <a href="{{ '/publications.html' | relative_url }}">Publications</a>；把這些方法用在產業資料上的成果見 <a href="{{ '/projects.html' | relative_url }}">Projects</a>。
     </p>
 </div>

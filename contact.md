@@ -14,13 +14,13 @@ permalink: /contact.html
         <div class="contact-card">
             <div class="contact-icon">✉️</div>
             <div class="contact-label">Email</div>
-            <div class="contact-value"><a href="mailto:chunyilee0102@gmail.com">chunyilee0102@gmail.com</a></div>
+            <div class="contact-value"><a href="mailto:{{ site.email }}">{{ site.email }}</a></div>
         </div>
 
         <div class="contact-card">
             <div class="contact-icon">🔗</div>
             <div class="contact-label">LinkedIn</div>
-            <div class="contact-value"><a href="https://www.linkedin.com/in/chun-yi-lee-1778ab1a1/" target="_blank">Chun-Yi Lee</a></div>
+            <div class="contact-value"><a href="{{ site.linkedin_url }}" target="_blank">Chun-Yi Lee</a></div>
         </div>
 
         <div class="contact-card">

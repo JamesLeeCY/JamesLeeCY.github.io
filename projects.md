@@ -125,6 +125,6 @@ permalink: /projects.html
     <div class="divider"></div>
 
     <p class="text-muted" style="text-align:center">
-        更多程式碼與進行中的專案：<a href="https://github.com/JamesLeeCY" target="_blank" rel="noopener">github.com/JamesLeeCY</a>
+        更多程式碼與進行中的專案：<a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">github.com/{{ site.github_username }}</a>
     </p>
 </div>

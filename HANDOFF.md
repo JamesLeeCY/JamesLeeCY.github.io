@@ -16,7 +16,7 @@
 Jekyll + GitHub Pages，推送 `main` 即部署，無 Gemfile／無建置腳本。
 
 ```
-_config.yml            站名、描述、email、導覽列（site.navbar，6 頁）
+_config.yml            站名、描述、聯絡資訊（email / github_username / linkedin_url）、導覽列
 _layouts/default.html  全站外框（Google Fonts: Inter + Lora）
 _includes/
   header.html          依 site.navbar 產生導覽列，當前頁標 active
@@ -66,9 +66,9 @@ contact.md             聯絡方式
    *An Integrative Approach to Cross-Cultural Neuropsychology*。
    - Psychonomics 2024 作者順序已依摘要集改為 Lee, Goh, Yu, Gutchess；
      CNS 2020 地點改為 Virtual（原定 Boston，因疫情改線上）。
-2. **首頁寫死的路徑與 email**：`index.html` 的 `/projects.html`、`/publications.html`
-   未用 `relative_url`，email 未用 `site.email`。改 email 時需同時改兩處，
-   或改為引用 `site.email`。
+2. ~~寫死的路徑與聯絡資訊~~（2026-10-10 完成）：email、GitHub 帳號、LinkedIn 集中在
+   `_config.yml`（`email`、`github_username`、`linkedin_url`），全站以 `site.*` 引用；
+   站內連結一律用 `relative_url`。改聯絡方式只需改 `_config.yml`。
 3. **Projects 與 repo 同步**：五個專案（semiconductor-quality-ml、
    precision-weighted-investment-agent、paper-rag-copilot、fmri-video-feature-analysis、
    line-chat-triage）若有新成果或指標，記得回頭更新 `projects.md`。
