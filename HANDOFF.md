@@ -72,6 +72,8 @@ contact.md             聯絡方式
 - 技能：移除 Clustering；新增 TypeScript 與「Web 開發」分組（對應 PACLIC）；
   kappa 改稱「LLM–Human Label Agreement」（只有一位人工標註者，不是標註者間一致性），
   LINE 卡片補上 κ 最高 0.42（隨機，Qwen3 v1）/ 0.55（加強，Qwen3 v2），兩個數字來自不同提示詞版本。
+- 技能 Model Calibration 拿掉 ECE（網站已無對應）；投資 Agent 卡片補上每月排程自動執行
+  前瞻驗證並重建研究儀表板，對應 Scheduled Pipelines。
 
 ## 4. 待辦事項
 

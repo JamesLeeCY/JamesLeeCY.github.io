@@ -45,7 +45,7 @@ permalink: /projects.html
             <li>無選股偏誤股票池：271 檔、每年依當時成交值取前 100 檔並含下市股，2019–2026 共 8,475 筆 walk-forward 預測；財報設公告遞延，杜絕 look-ahead。</li>
             <li><strong>誠實結論：</strong>方向準確率低於「永遠猜上漲」，所有策略的 Sharpe 都低於 0050。精度加權在真實資料上從未奏效——每期 IC 的標準差是平均的 4 倍，估計「誰比較可靠」的誤差和訊號本身一樣大。</li>
             <li>唯一站得住的訊號：財報 Agent 的產業內選股（IC +0.029，t 2.16），產業中性做多扣成本後每期 +0.26%。但樣本外 IR 只剩樣本內的 1/6–1/3，扣掉嘗試次數的 Deflated Sharpe 不顯著。</li>
-            <li>過度擬合控制：規則於 2026-10-09 凍結並事先登錄評估方式，程式碼指紋一改就拒絕預測，紀錄只能新增；正式前瞻紀錄自 2026-11 起累積。</li>
+            <li>過度擬合控制：規則於 2026-10-09 凍結並事先登錄評估方式，程式碼指紋一改就拒絕預測，紀錄只能新增；正式前瞻紀錄自 2026-11 起累積。每月由 Windows 工作排程器無人值守執行預測與結算，有新結果時自動重建研究儀表板。</li>
         </ul>
         <ul class="tag-list">
             <li>Python</li><li>Multi-Agent</li><li>LLM</li><li>Walk-Forward Backtesting</li><li>Information Coefficient</li><li>Survivorship Bias</li><li>Deflated Sharpe</li><li>Brier Score</li><li>Claude Code</li>

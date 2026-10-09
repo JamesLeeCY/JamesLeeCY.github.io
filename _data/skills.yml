@@ -87,7 +87,7 @@ groups:
     items:
       - Experimental Design
       - Statistical Modeling
-      - Model Calibration (Brier Score, ECE)
+      - Model Calibration (Brier Score)
       - Leakage-Safe Temporal Splits
       - Confidence Intervals (Wilson, Block Bootstrap)
       - LLM–Human Label Agreement (Cohen's Kappa)
