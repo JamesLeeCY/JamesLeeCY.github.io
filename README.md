@@ -3,7 +3,7 @@
 李俊毅（Chun-Yi Lee）的個人作品集網站：**https://JamesLeeCY.github.io**
 
 資料科學家，專注於高維度、高雜訊、多模態資料——半導體良率預測、多代理人 LLM 系統、
-RAG、電腦視覺特徵萃取。台大 & 中研院跨領域神經科學博士候選人（預計 2027 年 3 月畢業），
+RAG、電腦視覺特徵萃取，也有正式上線的全端系統（國際會議報名與金流）。台大 & 中研院跨領域神經科學博士候選人（預計 2027 年 3 月畢業），
 正在尋找台灣的資料科學、機器學習與 AI 工程職缺。
 
 ## 網站內容
@@ -11,7 +11,7 @@ RAG、電腦視覺特徵萃取。台大 & 中研院跨領域神經科學博士�
 | 頁面 | 內容 |
 |---|---|
 | Home | 簡介、學歷、核心能力 |
-| Projects | 五個公開專案與 GitHub 連結 |
+| Projects | 六個專案：五個公開 repo，加上一個已上線的私有系統 |
 | Research | 神經科學研究，以及可轉用到產業的方法 |
 | Publications | 期刊論文、書籍章節、會議發表 |
 | Awards & Leadership | 獎項與領導經歷 |
@@ -24,6 +24,9 @@ RAG、電腦視覺特徵萃取。台大 & 中研院跨領域神經科學博士�
 - [引用溯源的 RAG 系統](https://github.com/JamesLeeCY/paper-rag-copilot)
 - [影像特徵萃取與時序對齊](https://github.com/JamesLeeCY/fmri-video-feature-analysis)
 - [中文對話風險分流系統](https://github.com/JamesLeeCY/line-chat-triage)
+- [PACLIC 40 國際會議報名與金流系統](https://registration.linguistics.ntu.edu.tw)（repo 私有，連正式站）
+
+所有專案皆以 Claude Code 協助開發。
 
 ## 技術
 

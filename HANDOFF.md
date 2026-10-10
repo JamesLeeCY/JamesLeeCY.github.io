@@ -82,8 +82,15 @@ contact.md             聯絡方式
     以及跨站點 fMRI 訊號校準的實驗設計（依據：fmri-video-feature-analysis README、
     CNS 2020 摘要）。
   至此技能區塊每一項都能在 Projects 或 Research 頁找到對應。
+- 定位補強（2026-10-10）：首頁簡介補上 RAG 與上線的全端系統；Contact 頁改以求職為主；
+  README 改為六個專案（含 PACLIC）。GitHub 個人頁（JamesLeeCY/JamesLeeCY）同步更新
+  代表作品與技術列表。
 
 ## 4. 待辦事項
+
+0. **工作經歷尚未上網站**：GitHub 個人頁有「數位健康公司 R&D 專案經理」與
+   「2024–2025 Brandeis 教育部公費訪問學者、建置台美跨站點資料平台」，網站沒有。
+   需使用者確認放置位置與可公開的公司名稱、期間。另待使用者提供 PDF 履歷。
 
 1. ~~補發表連結~~（2026-10-10 完成）：書籍章節連到 OUP 書籍頁（第 6 章，無章節 DOI）；
    兩筆會議連到官方摘要集 PDF 的對應頁（CNS 2020 p.86 海報 C92、Psychonomics 2024
