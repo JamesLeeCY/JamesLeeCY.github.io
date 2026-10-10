@@ -46,13 +46,14 @@ permalink: /awards_leadership.html
             <div class="leadership-header">
                 <div>
                     <div class="leadership-org">Boston Taiwanese Biotechnology Association (BTBA)</div>
-                    <div class="leadership-role">Fundraising Lead · 募款組長</div>
+                    <div class="leadership-role">Fundraising Co-Lead · 募款共同負責人</div>
                 </div>
-                <span class="leadership-period">2024 – Present</span>
+                <span class="leadership-period">2024 – 2025</span>
             </div>
             <ul>
-                <li>負責規劃年度研討會的募款策略與執行。</li>
-                <li>協調與生技產業贊助商的合作關係，支持協會運作。</li>
+                <li>共同帶領 6 人募款團隊，支持年度兩天的生技研討會（BTBA Symposium 2025，350+ 位與會者）。</li>
+                <li>向 21 位贊助者與捐款人募得 US$37K，其中個人談成 US$13K，包含唯一的 Diamond 級贊助。</li>
+                <li>負責贊助作業全流程：分級方案、開立帳單、付款追蹤、收據與權益履行。</li>
             </ul>
         </div>
 

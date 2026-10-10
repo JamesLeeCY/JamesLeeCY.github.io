@@ -88,10 +88,14 @@ contact.md             聯絡方式
 
 ## 4. 待辦事項
 
-0. **工作經歷尚未上網站**：GitHub 個人頁有「數位健康公司 R&D 專案經理」與
-   「2024–2025 Brandeis 教育部公費訪問學者、建置台美跨站點資料平台」，網站沒有。
-   需使用者確認放置位置與可公開的公司名稱、期間。另待使用者提供 PDF 履歷。
-
+0. ~~工作經歷與履歷~~（2026-10-10 完成）：首頁新增「工作經歷」區塊（WorldQuant BRAIN、
+   台大博士研究含 Brandeis 訪問、優照護 R&D 專案經理 2021.03–08、台大碩士研究），內容取自
+   使用者的 Finance 版 CV 與 GitHub 個人頁。履歷放在 `assets/CV_ChunYiLee.pdf`：由
+   Google Doc「CV_DataScientist_Finance」匯出的 PDF 移除手機號碼（聯絡行以 Calibri 重排，
+   已確認原始資料無殘留），首頁加下載連結。BTBA 改為 Fundraising Co-Lead、2024–2025。
+   - CV 更新時：從 Google Doc 匯出 PDF，再移除電話後覆蓋 `assets/CV_ChunYiLee.pdf`。
+   - 待使用者決定：CV 的投資專案仍是舊結果（135 筆、ECE 0.09 vs 0.12），標題仍為
+     「Data Scientist (Finance)」，與網站 Projects 卡片不一致；需在 Google Doc 修改。
 1. ~~補發表連結~~（2026-10-10 完成）：書籍章節連到 OUP 書籍頁（第 6 章，無章節 DOI）；
    兩筆會議連到官方摘要集 PDF 的對應頁（CNS 2020 p.86 海報 C92、Psychonomics 2024
    p.313 海報 3067）。同時把書名副標更正為 OUP 官方的

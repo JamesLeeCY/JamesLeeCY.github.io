@@ -266,6 +266,20 @@ main { min-height: 60vh; }
 .edu-degree { font-weight: 600; color: var(--navy); }
 .edu-school { color: var(--text-muted); font-size: 0.92rem; margin-top: 2px; }
 
+.exp-list { list-style: none; }
+.exp-list > li {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border);
+}
+.exp-list > li:last-child { border-bottom: none; }
+.exp-period { min-width: 132px; color: var(--accent); font-size: 0.88rem; font-weight: 700; padding-top: 2px; white-space: nowrap; }
+.exp-role { font-weight: 600; color: var(--navy); }
+.exp-org { color: var(--text-muted); font-size: 0.92rem; margin-top: 2px; }
+.exp-list ul { margin: 8px 0 0 18px; font-size: 0.94rem; }
+.exp-list ul li { margin-bottom: 4px; }
+
 /* ============================================
    Skills
    ============================================ */
@@ -513,6 +527,8 @@ main { min-height: 60vh; }
     .section, .page-content { padding: 36px 20px; }
     .award-item { flex-direction: column; gap: 4px; }
     .award-year { min-width: unset; }
+    .exp-list > li { flex-direction: column; gap: 4px; }
+    .exp-period { min-width: unset; }
 }
 
 @media (max-width: 520px) {
