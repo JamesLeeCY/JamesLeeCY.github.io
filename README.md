@@ -19,12 +19,12 @@ RAG、電腦視覺特徵萃取，也有正式上線的全端系統（國際會�
 
 ## 精選專案
 
-- [半導體品質與良率預測](https://github.com/JamesLeeCY/semiconductor-quality-ml)
-- [多代理人精度加權投資研究系統](https://github.com/JamesLeeCY/precision-weighted-investment-agent)
 - [引用溯源的 RAG 系統](https://github.com/JamesLeeCY/paper-rag-copilot)
 - [影像特徵萃取與時序對齊](https://github.com/JamesLeeCY/fmri-video-feature-analysis)
 - [中文對話風險分流系統](https://github.com/JamesLeeCY/line-chat-triage)
 - [PACLIC 40 國際會議報名與金流系統](https://registration.linguistics.ntu.edu.tw)（repo 私有，連正式站）
+- [半導體品質與良率預測](https://github.com/JamesLeeCY/semiconductor-quality-ml)
+- [多代理人精度加權投資研究系統](https://github.com/JamesLeeCY/precision-weighted-investment-agent)
 
 所有專案皆以 Claude Code 協助開發。
 

@@ -7,7 +7,7 @@ permalink: /projects.html
 <div class="page-content">
     <div class="page-header">
         <h1>Projects</h1>
-        <p class="lead">將處理高維度、高雜訊資料的方法，從神經科學遷移到<strong>製造、金融與語言</strong>領域。公開專案都附完整程式碼與分析報告——包含那些「看起來成立、實際不成立」的結果。所有專案皆以 <strong>Claude Code</strong> 協助開發。</p>
+        <p class="lead">將處理高維度、高雜訊資料的方法，從神經科學遷移到<strong>製造、金融與語言</strong>領域，從資料管線、模型評估到上線維運都有實作經驗。公開專案附完整程式碼與分析報告，所有專案皆以 <strong>Claude Code</strong> 協助開發。</p>
     </div>
 
     <div class="research-item">
