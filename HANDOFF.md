@@ -108,7 +108,7 @@ contact.md             聯絡方式
 2. ~~寫死的路徑與聯絡資訊~~（2026-10-10 完成）：email、GitHub 帳號、LinkedIn 集中在
    `_config.yml`（`email`、`github_username`、`linkedin_url`），全站以 `site.*` 引用；
    站內連結一律用 `relative_url`。改聯絡方式只需改 `_config.yml`。
-3. **Projects 與 repo 同步**：五個專案（semiconductor-quality-ml、
+3. **Projects 與 repo 同步**：六個專案（semiconductor-quality-ml、
    precision-weighted-investment-agent、paper-rag-copilot、fmri-video-feature-analysis、
    line-chat-triage，以及私有的 PACLIC 40）若有新成果或指標，記得回頭更新 `projects.md`。
    - LINE Triage 的合成評估目前只有 10 組（卡片已註明「初步」），跑滿 100 組並經
