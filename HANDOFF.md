@@ -82,6 +82,9 @@ contact.md             聯絡方式
     以及跨站點 fMRI 訊號校準的實驗設計（依據：fmri-video-feature-analysis README、
     CNS 2020 摘要）。
   至此技能區塊每一項都能在 Projects 或 Research 頁找到對應。
+- 同步專案（2026-10-10 下午）：五個公開 repo 自上次同步後無新 commit。PACLIC 補上
+  「金額只在後端計算」「學生證審核與付款脫鉤」兩項設計，備份改寫為每日加密並同步雲端
+  （依 ioltw/paclic-backend 新 README 與 commit）。報名人數等營運數字不放。
 - 定位補強（2026-10-10）：首頁簡介補上 RAG 與上線的全端系統；Contact 頁改以求職為主；
   README 改為六個專案（含 PACLIC）。GitHub 個人頁（JamesLeeCY/JamesLeeCY）同步更新
   代表作品與技術列表。

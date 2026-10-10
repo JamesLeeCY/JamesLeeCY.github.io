@@ -134,8 +134,9 @@ permalink: /projects.html
         <ul>
             <li>流程：Google 登入 → 報名表 → 學生上傳學生證 → 藍新金流（NewebPay）刷卡；主辦方後台審核學生證、匯出 CSV 名單。</li>
             <li>計價改為查表式：新費率的早鳥／一般價差在不同級距不一致，用單一折扣公式算不出來；早鳥資格以付款完成時間判定，截止後自動關閉報名與付款。</li>
+            <li>刻意的設計：金額只由後端依報名內容計算，前端送出的金額一律不採信；學生證審核與付款脫鉤，審核進度不會卡住繳費。</li>
             <li>個資保護：學生證於會後依保存期限自動刪除。</li>
-            <li>部署與維運：Docker Compose + Nginx、GitHub Actions CI、需手動確認的正式部署流程、資料庫排程備份與還原演練。</li>
+            <li>部署與維運：Docker Compose + Nginx、GitHub Actions CI、需手動確認的正式部署流程、資料庫每日加密備份並同步到雲端、還原演練。</li>
         </ul>
         <ul class="tag-list">
             <li>TypeScript</li><li>JavaScript</li><li>NestJS</li><li>Next.js</li><li>React</li><li>PostgreSQL</li><li>TypeORM</li><li>Zod</li><li>Docker</li><li>GitHub Actions</li><li>Claude Code</li>
