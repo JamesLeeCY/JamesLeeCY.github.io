@@ -60,6 +60,20 @@ permalink: /awards_leadership.html
         <div class="leadership-item">
             <div class="leadership-header">
                 <div>
+                    <div class="leadership-org">Taiwanese American Association of Biotechnology (TAAB)</div>
+                    <div class="leadership-role">Organizing Committee &amp; Keynote Moderator · 籌備委員、Keynote 主持人</div>
+                </div>
+                <span class="leadership-period">2024</span>
+            </div>
+            <ul>
+                <li>協助籌辦 2024 TAAB Annual Symposium（2024 年 11 月 16–17 日，紐約 Hunter College，100+ 位與會者）。</li>
+                <li>以英文主持 keynote 演講：講者為林清詠博士（Dr. Ching-Yung Lin），Graphen, Inc. 執行長、前 IBM Chief Scientist（Graph Computing）。</li>
+            </ul>
+        </div>
+
+        <div class="leadership-item">
+            <div class="leadership-header">
+                <div>
                     <div class="leadership-org">Graduate Institute Student Association, NTU</div>
                     <div class="leadership-role">President · 學生會會長</div>
                 </div>
