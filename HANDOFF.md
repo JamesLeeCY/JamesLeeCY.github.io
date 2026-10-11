@@ -101,9 +101,11 @@ contact.md             聯絡方式
    使用者的 Finance 版 CV 與 GitHub 個人頁。履歷放在 `assets/CV_ChunYiLee.pdf`：由
    Google Doc「CV_DataScientist_Finance」匯出的 PDF 移除手機號碼（聯絡行以 Calibri 重排，
    已確認原始資料無殘留），首頁加下載連結。BTBA 改為 Fundraising Co-Lead、2024–2025。
-   - **履歷來源（2026-10-11 起）**：Google Doc「CV_DataScientist_2026-10」
-     （https://docs.google.com/document/d/1yvnA44BU0tffuberWEygOYf_y4uN_h96NuhSb2RGHgM/edit），
-     由 docx 上傳轉換建立，A4、日期用右對齊定位點。舊的「CV_DataScientist_Finance」不再使用。
+   - **履歷來源（2026-10-12 起）**：Google Doc「CV_DataScientist_2026-10b」
+     （https://docs.google.com/document/d/1bgSRPlFTz40dfUzWmI66V508xzu6U_1O2_5-fObCRiI/edit），
+     由 docx 上傳轉換建立，A4、日期用右對齊定位點。經歷含 UCarer（優照護）R&D PM 2021.03–08、
+     台大研究助理 2019.03–2021.08、消防替代役（內政部消防署訓練中心，南投）2018.04–2019.03。
+     舊的「CV_DataScientist_Finance」「CV_DataScientist_2026-10」不再使用。
    - CV 更新時：從上述 Google Doc 匯出 PDF（Drive connector 只能讀取／匯出，不能編輯），
      移除聯絡行的電話（以 Calibri 9pt 重排、保留 GitHub 連結），覆蓋 `assets/CV_ChunYiLee.pdf`。
 1. ~~補發表連結~~（2026-10-10 完成）：書籍章節連到 OUP 書籍頁（第 6 章，無章節 DOI）；
