@@ -105,7 +105,8 @@ contact.md             聯絡方式
      （https://docs.google.com/document/d/1bgSRPlFTz40dfUzWmI66V508xzu6U_1O2_5-fObCRiI/edit），
      由 docx 上傳轉換建立，A4、日期用右對齊定位點。經歷含 UCarer（優照護）R&D PM 2021.03–08、
      台大研究助理 2019.03–2021.08、消防替代役（內政部消防署訓練中心，南投）2018.04–2019.03。
-     舊的「CV_DataScientist_Finance」「CV_DataScientist_2026-10」不再使用。
+     舊的「CV_DataScientist_Finance」不再使用；「CV_DataScientist_2026-10」已移到垃圾桶。
+   - 首頁工作經歷與 CV 一致：WorldQuant、台大博士研究、優照護、台大研究助理、消防替代役、台大碩士研究。
    - CV 更新時：從上述 Google Doc 匯出 PDF（Drive connector 只能讀取／匯出，不能編輯），
      移除聯絡行的電話（以 Calibri 9pt 重排、保留 GitHub 連結），覆蓋 `assets/CV_ChunYiLee.pdf`。
 1. ~~補發表連結~~（2026-10-10 完成）：書籍章節連到 OUP 書籍頁（第 6 章，無章節 DOI）；
