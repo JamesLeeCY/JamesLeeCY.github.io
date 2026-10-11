@@ -101,12 +101,11 @@ contact.md             聯絡方式
    使用者的 Finance 版 CV 與 GitHub 個人頁。履歷放在 `assets/CV_ChunYiLee.pdf`：由
    Google Doc「CV_DataScientist_Finance」匯出的 PDF 移除手機號碼（聯絡行以 Calibri 重排，
    已確認原始資料無殘留），首頁加下載連結。BTBA 改為 Fundraising Co-Lead、2024–2025。
-   - CV 更新時：從 Google Doc（無法用 connector 編輯，只能讀取／匯出）匯出 PDF，移除電話後覆蓋 `assets/CV_ChunYiLee.pdf`。
-   - 2026-10-10 更新：使用者在 Google Doc 貼上新的投資專案段落（271 檔、8,475 筆、IC +0.029），
-     標題改為「Data Scientist」；網站 PDF 已重新匯出。
-   - 注意：Google Doc 目前匯出時，經歷標題右側的地點與日期不再靠右（黏在標題後面）。
-     網站版 PDF 已在匯出後把這三段移回靠右（右緣 x=557）。下次匯出前最好先在 Google Doc
-     修好對齊（加右對齊定位點），否則要重做這一步。
+   - **履歷來源（2026-10-11 起）**：Google Doc「CV_DataScientist_2026-10」
+     （https://docs.google.com/document/d/1yvnA44BU0tffuberWEygOYf_y4uN_h96NuhSb2RGHgM/edit），
+     由 docx 上傳轉換建立，A4、日期用右對齊定位點。舊的「CV_DataScientist_Finance」不再使用。
+   - CV 更新時：從上述 Google Doc 匯出 PDF（Drive connector 只能讀取／匯出，不能編輯），
+     移除聯絡行的電話（以 Calibri 9pt 重排、保留 GitHub 連結），覆蓋 `assets/CV_ChunYiLee.pdf`。
 1. ~~補發表連結~~（2026-10-10 完成）：書籍章節連到 OUP 書籍頁（第 6 章，無章節 DOI）；
    兩筆會議連到官方摘要集 PDF 的對應頁（CNS 2020 p.86 海報 C92、Psychonomics 2024
    p.313 海報 3067）。同時把書名副標更正為 OUP 官方的
