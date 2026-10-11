@@ -101,8 +101,8 @@ contact.md             聯絡方式
    使用者的 Finance 版 CV 與 GitHub 個人頁。履歷放在 `assets/CV_ChunYiLee.pdf`：由
    Google Doc「CV_DataScientist_Finance」匯出的 PDF 移除手機號碼（聯絡行以 Calibri 重排，
    已確認原始資料無殘留），首頁加下載連結。BTBA 改為 Fundraising Co-Lead、2024–2025。
-   - **履歷來源（2026-10-12 起）**：Google Doc「CV_DataScientist_2026-10d」
-     （https://docs.google.com/document/d/1U7PwKEpgswhfVftvGkwXgwBfoFFqMniwopcjAgRdASc/edit），
+   - **履歷來源（2026-10-12 起）**：Google Doc「CV_DataScientist_2026-10e」
+     （https://docs.google.com/document/d/1xVOTgUoyyZicVyhenM-5pu0U6tO9fdlZsrYlkxGTEl0/edit），
      WorldQuant 自 2026.08 起；Brandeis 訪問學者獨立成經歷；Leadership 加 TAAB 2024 年會
      （籌備委員、keynote 主持，講者 Dr. Ching-Yung Lin，Graphen CEO、前 IBM Chief Scientist）。
      由 docx 上傳轉換建立，A4、日期用右對齊定位點。經歷含 UCarer（優照護）R&D PM 2021.03–08、
