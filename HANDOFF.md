@@ -107,7 +107,7 @@ contact.md             聯絡方式
      （籌備委員、keynote 主持，講者 Dr. Ching-Yung Lin，Graphen CEO、前 IBM Chief Scientist）。
      由 docx 上傳轉換建立，A4、日期用右對齊定位點。經歷含 UCarer（優照護）R&D PM 2021.03–08、
      台大研究助理 2019.03–2021.08、消防替代役（內政部消防署訓練中心，南投）2018.04–2019.03。
-     舊的「CV_DataScientist_Finance」不再使用；「CV_DataScientist_2026-10」「-10b」「-10c」已移到垃圾桶。TAAB 主持與籌備資訊來源為 TAAB 臉書（使用者確認）。
+     舊的「CV_DataScientist_Finance」不再使用；「CV_DataScientist_2026-10」「-10b」「-10c」「-10d」已移到垃圾桶。TAAB 主持與籌備資訊來源為 TAAB 臉書（使用者確認）。
    - GitHub 個人頁（JamesLeeCY/JamesLeeCY）背景段落已同步：WorldQuant、UCarer、Brandeis、BTBA、TAAB（2026-10-12）。
    - 首頁工作經歷與 CV 一致：WorldQuant、台大博士研究、優照護、台大研究助理、消防替代役、台大碩士研究。
    - CV 更新時：從上述 Google Doc 匯出 PDF（Drive connector 只能讀取／匯出，不能編輯），
