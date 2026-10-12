@@ -111,7 +111,7 @@ contact.md             聯絡方式
    - 投資 Agent 卡片補上月營收驚奇 SUE（2026-10-12，依 repo README 與研究儀表板）。研究儀表板是私人
      claude.ai artifact，組織設定不允許公開分享；改為在 investment repo 開 GitHub Pages（main / 根目錄，
      加 `.nojekyll`），公開網址 https://jamesleecy.github.io/precision-weighted-investment-agent/site/research-dashboard.html ，
-     已連到投資 Agent 卡片與 GitHub 個人頁。repo 推送新版 `site/research-dashboard.html` 就會自動更新；架構圖（mermaid）在此版本顯示為原始碼。
+     已連到投資 Agent 卡片與 GitHub 個人頁。repo 推送新版 `site/research-dashboard.html` 就會自動更新；架構圖已由 repo commit 1435d6d 修正，公開版正常顯示。
    - 分享預覽與網站圖示（2026-10-12）：`_layouts/default.html` 加 Open Graph / Twitter card / canonical
      與 favicon；預覽圖 `assets/og-image.jpg`（1200×630，含大頭照與重點經歷，經歷有變時要重做），
      圖示為「CL」字母組合：`favicon.ico`（根目錄）、`assets/favicon-32.png`、`assets/apple-touch-icon.png`。
