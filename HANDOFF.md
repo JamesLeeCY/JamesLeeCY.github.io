@@ -117,6 +117,15 @@ contact.md             聯絡方式
      圖示為「CL」字母組合：`favicon.ico`（根目錄）、`assets/favicon-32.png`、`assets/apple-touch-icon.png`。
    - GitHub 個人頁（JamesLeeCY/JamesLeeCY）背景段落已同步：WorldQuant、UCarer、Brandeis、BTBA、TAAB（2026-10-12）。
    - 首頁工作經歷與 CV 一致：WorldQuant、台大博士研究、優照護、台大研究助理、消防替代役、台大碩士研究。
+   - Cake 履歷（cake.me，2026-10-12 更新，使用者自行登入後以內建瀏覽器編輯）：簡介改為 Data Scientist
+     定位；工作經歷六筆與 CV 一致；博士學歷的社團活動改為 BTBA Fundraising Co-Lead 2024–2025、
+     TAAB Organizing Committee & Keynote Moderator 2024；技能新增 LLM、RAG、LLM Evaluation、
+     Multi-Agent Systems、Prompt Engineering、NLP、Statistical Modeling、Time Series Analysis、
+     Quantitative Research、Backtesting、Docker、TypeScript；資格認證新增 WorldQuant Summer
+     Experience Program — Certificate of Completion（2026 年 8 月，永久有效）；精選履歷已換成 2026-10g PDF。
+     待使用者處理：精選作品的個人網站縮圖仍是舊版（刪除後重新加入即可重抓）。
+     編輯注意：公司欄自動完成不可按 Escape（會選第一個建議），要點空白處關閉；技能欄打字後要等建議清單載入（約 2 秒）再按 Enter。
+   - LinkedIn：文字已備妥，待使用者貼上，並到 Post Inspector 重新抓取網站預覽。簡介是否寫中研院職稱待使用者確認。
    - CV 更新時：從上述 Google Doc 匯出 PDF（Drive connector 只能讀取／匯出，不能編輯），
      移除聯絡行的電話（以 Calibri 9pt 重排、保留 GitHub 連結），覆蓋 `assets/CV_ChunYiLee.pdf`。
 1. ~~補發表連結~~（2026-10-10 完成）：書籍章節連到 OUP 書籍頁（第 6 章，無章節 DOI）；
