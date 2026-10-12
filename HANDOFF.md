@@ -125,7 +125,7 @@ contact.md             聯絡方式
      Experience Program — Certificate of Completion（2026 年 8 月，永久有效）；精選履歷已換成 2026-10g PDF。
      待使用者處理：精選作品的個人網站縮圖仍是舊版（刪除後重新加入即可重抓）。
      作品集（2026-10-12）：個人網站、fMRI、LINE 三件已更新內文／摘要／標籤並發布；RAG、PACLIC、半導體、
-     投資 Agent 四件已建立為草稿（內容取自 projects.md），待使用者上傳封面後發布。封面由
+     投資 Agent 四件（內容取自 projects.md）由使用者上傳封面後已發布，Cake 上共 7 件作品。封面由
      scratchpad 的 make_covers.py 產生，放在 repo 根目錄 `cake_covers/`（已列入 .git/info/exclude，不進版控）。
      Cake 建立新作品會跳 Cloudflare 驗證，需使用者手動通過；封面必填且只能上傳檔案。
      編輯注意：公司欄自動完成不可按 Escape（會選第一個建議），要點空白處關閉；技能欄打字後要等建議清單載入（約 2 秒）再按 Enter。
