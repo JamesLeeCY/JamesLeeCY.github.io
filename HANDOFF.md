@@ -130,7 +130,7 @@ en/index.html … en/contact.md  英文版六頁
      待使用者處理：精選作品的個人網站縮圖仍是舊版（刪除後重新加入即可重抓）。
      作品集（2026-10-12）：個人網站、fMRI、LINE 三件已更新內文／摘要／標籤並發布；RAG、PACLIC、半導體、
      投資 Agent 四件（內容取自 projects.md）由使用者上傳封面後已發布，Cake 上共 7 件作品。封面由
-     scratchpad 的 make_covers.py 產生，放在 repo 根目錄 `cake_covers/`（已列入 .git/info/exclude，不進版控）。
+     scratchpad 的 make_covers.py 產生（上傳完成後 `cake_covers/` 已移到資源回收筒）。
      Cake 履歷（resume-builder/james820102，公開連結 cake.me/s--1lkSRFo-CAEnQKd85yC5sA--/james820102）2026-10-12 改為 CV 2026-10g 內容：
      拿掉電話、加上中研院合聘職稱，保留兩篇期刊論文。舊草稿「My Cake Resume (3)」已由使用者刪除，Cake 上只剩這一份履歷。
      編輯器是 Flutter canvas：點擊後先按一次 shift 喚醒鍵盤，ctrl+a 只選一段，跨段落用 shift+click 選取。
