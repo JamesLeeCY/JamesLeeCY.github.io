@@ -6,17 +6,6 @@ description: '資料科學家：引用溯源的 RAG、多代理人 LLM 系統、
 baseurl: "" 
 url: "https://JamesLeeCY.github.io"
 
-# 導航列設定
-navbar:
-  - title: Home
-    url: /
-  - title: Projects
-    url: /projects.html
-  - title: Research
-    url: /research.html
-  - title: Publications
-    url: /publications.html
-  - title: Awards & Leadership
-    url: /awards_leadership.html
-  - title: Contact
-    url: /contact.html
+# 中英雙語：中文版在根目錄，英文版在 /en/。導覽列與介面字串在 _data/i18n.yml，
+# 每頁 front matter 需有 lang（zh / en）與 ref（配對另一語言版本）。
+description_en: 'Data scientist building citation-grounded RAG, multi-agent LLM systems, Chinese conversation analytics and computer vision. WorldQuant BRAIN Research Consultant; PhD candidate at National Taiwan University & Academia Sinica; former visiting scholar at Brandeis University.'

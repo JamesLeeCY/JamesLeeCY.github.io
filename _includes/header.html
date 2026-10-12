@@ -1,16 +1,24 @@
+{%- assign lang = page.lang | default: "zh" -%}
+{%- assign t = site.data.i18n[lang] -%}
+{%- if lang == "en" -%}{%- assign other_lang = "zh" -%}{%- else -%}{%- assign other_lang = "en" -%}{%- endif -%}
+{%- assign home = site.pages | where: "ref", "home" | where: "lang", lang | first -%}
+{%- assign alt_page = site.pages | where: "ref", page.ref | where: "lang", other_lang | first -%}
+{%- unless alt_page -%}{%- assign alt_page = site.pages | where: "ref", "home" | where: "lang", other_lang | first -%}{%- endunless -%}
 <header class="site-header">
     <div class="header-inner">
-        <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
-        <nav class="site-nav">
-            <ul>
-                {% for item in site.navbar %}
-                <li>
-                    <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} class="active"{% endif %}>
-                        {{ item.title }}
-                    </a>
-                </li>
-                {% endfor %}
-            </ul>
-        </nav>
+        <a href="{{ home.url | relative_url }}" class="site-title">{{ site.title }}</a>
+        <div class="header-right">
+            <nav class="site-nav">
+                <ul>
+                    {% for item in t.nav %}
+                    {%- assign target = site.pages | where: "ref", item.ref | where: "lang", lang | first -%}
+                    <li>
+                        <a href="{{ target.url | relative_url }}"{% if page.ref == item.ref %} class="active"{% endif %}>{{ item.title }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </nav>
+            <a href="{{ alt_page.url | relative_url }}" class="lang-switch" hreflang="{{ site.data.i18n[other_lang].html_lang }}" lang="{{ site.data.i18n[other_lang].html_lang }}" title="{{ t.switch_title }}">{{ t.switch_label }}</a>
+        </div>
     </div>
 </header>

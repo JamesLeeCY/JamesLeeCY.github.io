@@ -4,6 +4,6 @@
             <a href="mailto:{{ site.email }}">✉ {{ site.email }}</a>
             <a href="{{ site.linkedin_url }}" target="_blank">LinkedIn</a>
         </div>
-        <p class="footer-copy">&copy; {{ site.time | date: "%Y" }} Chun-Yi Lee. Powered by Jekyll &amp; GitHub Pages.</p>
+        <p class="footer-copy">&copy; {{ site.time | date: "%Y" }} Chun-Yi Lee. {{ site.data.i18n[page.lang | default: 'zh'].footer_powered }}</p>
     </div>
 </footer>

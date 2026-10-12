@@ -1,0 +1,28 @@
+# 中英文介面字串。頁面以 front matter 的 lang（zh / en）選用，
+# ref 用來配對同一頁的另一個語言版本（語言切換鈕會連到配對頁）。
+zh:
+  html_lang: zh-Hant
+  og_locale: zh_TW
+  switch_label: EN
+  switch_title: Switch to English
+  nav:
+    - { title: 首頁, ref: home }
+    - { title: 專案, ref: projects }
+    - { title: 研究, ref: research }
+    - { title: 發表, ref: publications }
+    - { title: 獎項與領導, ref: awards }
+    - { title: 聯絡, ref: contact }
+  footer_powered: Powered by Jekyll &amp; GitHub Pages.
+en:
+  html_lang: en
+  og_locale: en_US
+  switch_label: 中文
+  switch_title: 切換為中文
+  nav:
+    - { title: Home, ref: home }
+    - { title: Projects, ref: projects }
+    - { title: Research, ref: research }
+    - { title: Publications, ref: publications }
+    - { title: Awards & Leadership, ref: awards }
+    - { title: Contact, ref: contact }
+  footer_powered: Powered by Jekyll &amp; GitHub Pages.
