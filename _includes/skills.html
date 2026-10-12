@@ -1,7 +1,7 @@
 <div class="skills-section">
     {% for group in site.data.skills.groups %}
     <div class="skills-group">
-        <h4>{{ group.title }}</h4>
+        <h4>{% if page.lang == "en" %}{{ group.title_en }}{% else %}{{ group.title_zh }}{% endif %}</h4>
         <ul class="{% if group.style == 'method' %}method-list{% else %}tag-list{% endif %}">
             {% for item in group.items %}
             <li>{{ item }}</li>

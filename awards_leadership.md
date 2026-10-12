@@ -1,22 +1,24 @@
 ---
 layout: default
-title: Awards & Leadership
+title: 獎項與領導
 permalink: /awards_leadership.html
+lang: zh
+ref: awards
 ---
 
 <div class="page-content">
     <div class="page-header">
-        <h1>Awards &amp; Leadership</h1>
+        <h1>獎項與領導</h1>
         <p class="lead">學術榮譽、獎項與領導服務經歷。</p>
     </div>
 
     <div class="pub-section">
-        <h2>🏆 榮譽與獎項 (Honors &amp; Awards)</h2>
+        <h2>🏆 榮譽與獎項</h2>
 
         <div class="award-item">
             <span class="award-year">2017</span>
             <div>
-                <div class="award-title">Valedictorian of MA's department · 碩士班畢業生致詞代表</div>
+                <div class="award-title">碩士班畢業生致詞代表</div>
                 <div class="award-org">Graduate Institute of Brain and Mind Sciences, NTU</div>
             </div>
         </div>
@@ -24,7 +26,7 @@ permalink: /awards_leadership.html
         <div class="award-item">
             <span class="award-year">2015</span>
             <div>
-                <div class="award-title">Valedictorian of BA's department · 學士班畢業生致詞代表</div>
+                <div class="award-title">學士班畢業生致詞代表</div>
                 <div class="award-org">Department of Forestry and Resource Conservation, NTU</div>
             </div>
         </div>
@@ -32,21 +34,21 @@ permalink: /awards_leadership.html
         <div class="award-item">
             <span class="award-year">2011<br>–14</span>
             <div>
-                <div class="award-title">Academic Excellence Awards (Presidential Award)</div>
+                <div class="award-title">書卷獎</div>
                 <div class="award-org">National Taiwan University</div>
-                <div class="award-desc">獲獎 4 次：班級排名前 5% (Top 5% of the class)</div>
+                <div class="award-desc">獲獎 4 次：班級排名前 5%</div>
             </div>
         </div>
     </div>
 
     <div class="pub-section">
-        <h2>💼 領導與服務經歷 (Leadership &amp; Service)</h2>
+        <h2>💼 領導與服務經歷</h2>
 
         <div class="leadership-item">
             <div class="leadership-header">
                 <div>
                     <div class="leadership-org">Boston Taiwanese Biotechnology Association (BTBA)</div>
-                    <div class="leadership-role">Fundraising Co-Lead · 募款共同負責人</div>
+                    <div class="leadership-role">募款共同負責人（Fundraising Co-Lead）</div>
                 </div>
                 <span class="leadership-period">2024 – 2025</span>
             </div>
@@ -61,7 +63,7 @@ permalink: /awards_leadership.html
             <div class="leadership-header">
                 <div>
                     <div class="leadership-org">Taiwanese American Association of Biotechnology (TAAB)</div>
-                    <div class="leadership-role">Organizing Committee &amp; Keynote Moderator · 籌備委員、Keynote 主持人</div>
+                    <div class="leadership-role">籌備委員、Keynote 主持人</div>
                 </div>
                 <span class="leadership-period">2024</span>
             </div>
@@ -75,7 +77,7 @@ permalink: /awards_leadership.html
             <div class="leadership-header">
                 <div>
                     <div class="leadership-org">Graduate Institute Student Association, NTU</div>
-                    <div class="leadership-role">President · 學生會會長</div>
+                    <div class="leadership-role">學生會會長</div>
                 </div>
                 <span class="leadership-period">2015 – 2017</span>
             </div>
@@ -89,7 +91,7 @@ permalink: /awards_leadership.html
             <div class="leadership-header">
                 <div>
                     <div class="leadership-org">National Taiwan University</div>
-                    <div class="leadership-role">Head Teaching Assistant · 教學助理組長</div>
+                    <div class="leadership-role">教學助理組長</div>
                 </div>
                 <span class="leadership-period">2017 – 2018</span>
             </div>

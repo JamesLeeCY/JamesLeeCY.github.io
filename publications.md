@@ -1,17 +1,19 @@
 ---
 layout: default
-title: Publications
+title: 發表
 permalink: /publications.html
+lang: zh
+ref: publications
 ---
 
 <div class="page-content">
     <div class="page-header">
-        <h1>Publications &amp; Presentations</h1>
+        <h1>發表</h1>
         <p class="lead">期刊文章、書籍章節與國際會議發表。</p>
     </div>
 
     <div class="pub-section">
-        <h2>📄 期刊文章 (Journal Articles)</h2>
+        <h2>📄 期刊文章</h2>
         {% for item in site.data.publications.journal_articles %}
         <div class="pub-item">
             <div class="pub-title">{{ item.title }}</div>
@@ -23,7 +25,7 @@ permalink: /publications.html
     </div>
 
     <div class="pub-section">
-        <h2>📚 書籍章節 (Book Chapters)</h2>
+        <h2>📚 書籍章節</h2>
         {% for item in site.data.publications.book_chapters %}
         <div class="pub-item">
             <div class="pub-title">{{ item.title }}</div>
@@ -35,7 +37,7 @@ permalink: /publications.html
     </div>
 
     <div class="pub-section">
-        <h2>🎤 會議發表 (Conferences &amp; Presentations)</h2>
+        <h2>🎤 會議發表</h2>
         {% for item in site.data.publications.conferences_presentations %}
         <div class="pub-item">
             <div class="pub-title">{{ item.title }}</div>

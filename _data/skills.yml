@@ -1,8 +1,9 @@
-# 技能區塊資料。每個 group 會依序渲染成一個類別。
+# 技能區塊資料。每個 group 會依序渲染成一個類別；中文頁顯示 title_zh、英文頁顯示 title_en。
 # style: tag    → 實心標籤（tag-list）— 用於核心技術能力
 # style: method → 外框標籤（method-list）— 用於研究方法
 groups:
-  - title: "程式語言 / Programming"
+  - title_zh: "程式語言"
+    title_en: "Programming"
     style: tag
     items:
       - Python
@@ -13,7 +14,8 @@ groups:
       - TypeScript
       - JavaScript
 
-  - title: "機器學習 / Machine Learning"
+  - title_zh: "機器學習"
+    title_en: "Machine Learning"
     style: tag
     items:
       - Supervised Learning
@@ -26,7 +28,8 @@ groups:
       - Concept Drift
       - Information-Theoretic Features (Entropy, JS Divergence)
 
-  - title: "AI 與 LLM / AI & LLM"
+  - title_zh: "AI 與 LLM"
+    title_en: "AI & LLM"
     style: tag
     items:
       - RAG (Retrieval-Augmented Generation)
@@ -40,7 +43,8 @@ groups:
       - Chinese NLP
       - Claude Code
 
-  - title: "LLM 評估 / LLM Evaluation"
+  - title_zh: "LLM 評估"
+    title_en: "LLM Evaluation"
     style: tag
     items:
       - RAG Retrieval Metrics (Hit@k, MRR)
@@ -49,7 +53,8 @@ groups:
       - LLM-as-Judge & Judge Validation
       - LLM Data Labeling with Human Validation
 
-  - title: "電腦視覺與訊號處理 / Computer Vision & Signal"
+  - title_zh: "電腦視覺與訊號處理"
+    title_en: "Computer Vision & Signal"
     style: tag
     items:
       - OpenCV
@@ -59,7 +64,8 @@ groups:
       - Signal Processing
       - Multimodal Feature Extraction
 
-  - title: "資料工程 / Data Engineering"
+  - title_zh: "資料工程"
+    title_en: "Data Engineering"
     style: tag
     items:
       - Feature Engineering
@@ -71,7 +77,8 @@ groups:
       - APIs & Webhooks (FastAPI)
       - Scheduled Pipelines & Automated Reporting
 
-  - title: "Web 開發 / Web Development"
+  - title_zh: "Web 開發"
+    title_en: "Web Development"
     style: tag
     items:
       - Next.js / React
@@ -82,7 +89,8 @@ groups:
       - Docker & Nginx Deployment
       - CI/CD (GitHub Actions)
 
-  - title: "評估與統計 / Evaluation & Statistics"
+  - title_zh: "評估與統計"
+    title_en: "Evaluation & Statistics"
     style: tag
     items:
       - Experimental Design
@@ -94,7 +102,8 @@ groups:
       - Synthetic Benchmarks with Planted Ground Truth
       - Ablation Studies
 
-  - title: "量化研究 / Quantitative Research"
+  - title_zh: "量化研究"
+    title_en: "Quantitative Research"
     style: tag
     items:
       - Walk-Forward Backtesting
@@ -104,7 +113,8 @@ groups:
       - Overfitting Controls (Out-of-Sample, Deflated Sharpe)
       - Pre-Registered Forward Validation
 
-  - title: "研究方法 / Research Methods"
+  - title_zh: "研究方法"
+    title_en: "Research Methods"
     style: method
     items:
       - "fMRI (Functional Magnetic Resonance Imaging) Data Analysis"

@@ -116,6 +116,24 @@ main { min-height: 60vh; }
     border-radius: 2px;
 }
 
+.header-right { display: flex; align-items: center; gap: 10px; }
+
+.lang-switch {
+    flex: none;
+    min-width: 44px;
+    padding: 5px 12px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    color: var(--navy);
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.4;
+    transition: all 0.2s;
+}
+
+.lang-switch:hover { border-color: var(--accent); color: var(--accent); }
+
 /* ============================================
    Profile Hero (Homepage — academic layout)
    ============================================ */
@@ -539,6 +557,9 @@ main { min-height: 60vh; }
         padding: 10px 16px 6px;
         gap: 4px;
     }
+    .header-inner { position: relative; }
+    .header-right { width: 100%; }
+    .lang-switch { position: absolute; top: 9px; right: 16px; padding: 3px 10px; font-size: 0.78rem; }
     .site-nav ul { gap: 0; flex-wrap: wrap; margin-left: -7px; }
     .site-nav a { display: inline-block; padding: 6px 7px; font-size: 0.78rem; }
     .site-nav a.active::after { left: 7px; right: 7px; }
