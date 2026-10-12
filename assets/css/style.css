@@ -549,18 +549,23 @@ main { min-height: 60vh; }
     .exp-period { min-width: unset; }
 }
 
-@media (max-width: 520px) {
+/* 導覽列加上語言切換鈕後，英文版在 900px 以下放不下一行，改為兩行排列 */
+@media (max-width: 900px) {
     .header-inner {
+        position: relative;
         flex-direction: column;
         align-items: flex-start;
         height: auto;
         padding: 10px 16px 6px;
         gap: 4px;
     }
-    .header-inner { position: relative; }
     .header-right { width: 100%; }
     .lang-switch { position: absolute; top: 9px; right: 16px; padding: 3px 10px; font-size: 0.78rem; }
-    .site-nav ul { gap: 0; flex-wrap: wrap; margin-left: -7px; }
+    .site-nav ul { gap: 0; flex-wrap: wrap; margin-left: -9px; }
+}
+
+@media (max-width: 520px) {
+    .site-nav ul { margin-left: -7px; }
     .site-nav a { display: inline-block; padding: 6px 7px; font-size: 0.78rem; }
     .site-nav a.active::after { left: 7px; right: 7px; }
 }
