@@ -131,9 +131,9 @@ contact.md             聯絡方式
 3. **Projects 與 repo 同步**：六個專案（semiconductor-quality-ml、
    precision-weighted-investment-agent、paper-rag-copilot、fmri-video-feature-analysis、
    line-chat-triage，以及私有的 PACLIC 40）若有新成果或指標，記得回頭更新 `projects.md`。
-   - LINE Triage 的合成評估目前只有 10 組（卡片已註明「初步」），跑滿 100 組並經
-     Claude 驗證後更新數字。
-   - 投資 Agent 前瞻驗證 2026-11 起有正式紀錄，累積幾期後可補上 live IC。
+   - LINE Triage 合成評估已有 100 組結果（2026-10-12 同步）；待 repo 以全新 seed 驗證、跑完 Claude 驗證（C）後再更新。
+   - RAG 生成端 prompt v2 已評估（維持 v1），已寫入卡片。
+   - 投資 Agent 前瞻驗證：財報 Agent（fv1）2026-11 起、SUE（fv2）2026-10-13 起有正式紀錄，累積幾期後可補上 live IC。
    - RAG Copilot 的語料是未發表論文，網站只寫方法與彙總指標，不寫論文內容。
    - 私有 repo（fmri-db、brain-forest-exposure-study3、ntsec-forest-fmri、
      WQ_open_machine_taiwan 等）不放上網站。例外：PACLIC 40 經使用者同意列出，只連正式站。
