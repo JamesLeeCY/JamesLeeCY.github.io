@@ -129,7 +129,7 @@ contact.md             聯絡方式
      scratchpad 的 make_covers.py 產生，放在 repo 根目錄 `cake_covers/`（已列入 .git/info/exclude，不進版控）。
      Cake 建立新作品會跳 Cloudflare 驗證，需使用者手動通過；封面必填且只能上傳檔案。
      編輯注意：公司欄自動完成不可按 Escape（會選第一個建議），要點空白處關閉；技能欄打字後要等建議清單載入（約 2 秒）再按 Enter。
-   - LinkedIn：文字已備妥，待使用者貼上，並到 Post Inspector 重新抓取網站預覽。簡介是否寫中研院職稱待使用者確認。
+   - LinkedIn：文字已備妥，待使用者貼上，並到 Post Inspector 重新抓取網站預覽。簡介可寫中研院 Scientific Researcher（與台大合聘，使用者 2026-10-12 確認；期間未提供，故不寫年份）。
    - CV 更新時：從上述 Google Doc 匯出 PDF（Drive connector 只能讀取／匯出，不能編輯），
      移除聯絡行的電話（以 Calibri 9pt 重排、保留 GitHub 連結），覆蓋 `assets/CV_ChunYiLee.pdf`。
 1. ~~補發表連結~~（2026-10-10 完成）：書籍章節連到 OUP 書籍頁（第 6 章，無章節 DOI）；
