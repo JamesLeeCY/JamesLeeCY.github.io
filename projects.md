@@ -144,6 +144,7 @@ permalink: /projects.html
         </ul>
         <p class="pub-doi" style="margin-top:14px">
             <a href="https://github.com/JamesLeeCY/precision-weighted-investment-agent" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://jamesleecy.github.io/precision-weighted-investment-agent/site/research-dashboard.html" target="_blank" rel="noopener">研究儀表板</a>
         </p>
     </div>
 
