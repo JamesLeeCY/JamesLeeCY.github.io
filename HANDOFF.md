@@ -127,6 +127,9 @@ contact.md             聯絡方式
      作品集（2026-10-12）：個人網站、fMRI、LINE 三件已更新內文／摘要／標籤並發布；RAG、PACLIC、半導體、
      投資 Agent 四件（內容取自 projects.md）由使用者上傳封面後已發布，Cake 上共 7 件作品。封面由
      scratchpad 的 make_covers.py 產生，放在 repo 根目錄 `cake_covers/`（已列入 .git/info/exclude，不進版控）。
+     Cake 履歷（resume-builder/james820102，公開連結 cake.me/s--1lkSRFo-CAEnQKd85yC5sA--/james820102）2026-10-12 改為 CV 2026-10g 內容：
+     拿掉電話、加上中研院合聘職稱，保留兩篇期刊論文。另有一份未發布草稿「My Cake Resume (3)」未動。
+     編輯器是 Flutter canvas：點擊後先按一次 shift 喚醒鍵盤，ctrl+a 只選一段，跨段落用 shift+click 選取。
      Cake 建立新作品會跳 Cloudflare 驗證，需使用者手動通過；封面必填且只能上傳檔案。
      編輯注意：公司欄自動完成不可按 Escape（會選第一個建議），要點空白處關閉；技能欄打字後要等建議清單載入（約 2 秒）再按 Enter。
    - LinkedIn：文字已備妥，待使用者貼上，並到 Post Inspector 重新抓取網站預覽。簡介可寫中研院 Scientific Researcher（與台大合聘，使用者 2026-10-12 確認；期間未提供，故不寫年份）。
