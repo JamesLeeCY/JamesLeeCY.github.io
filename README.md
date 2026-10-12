@@ -1,6 +1,6 @@
 # JamesLeeCY.github.io
 
-李俊毅（Chun-Yi Lee）的個人作品集網站：**https://JamesLeeCY.github.io**
+李俊毅（Chun-Yi Lee）的個人作品集網站：**https://JamesLeeCY.github.io**（中文）／**https://JamesLeeCY.github.io/en/**（English），右上角按鈕切換語言。
 
 資料科學家，專注於高維度、高雜訊、多模態資料——半導體良率預測、多代理人 LLM 系統、
 RAG、電腦視覺特徵萃取，也有正式上線的全端系統（國際會議報名與金流）。台大 & 中研院跨領域神經科學博士候選人（預計 2027 年 3 月畢業），
@@ -10,7 +10,7 @@ RAG、電腦視覺特徵萃取，也有正式上線的全端系統（國際會�
 
 | 頁面 | 內容 |
 |---|---|
-| Home | 簡介、學歷、核心能力 |
+| Home | 簡介、工作經歷、學歷、核心能力 |
 | Projects | 六個專案：五個公開 repo，加上一個已上線的私有系統 |
 | Research | 神經科學研究，以及可轉用到產業的方法 |
 | Publications | 期刊論文、書籍章節、會議發表 |

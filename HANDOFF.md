@@ -1,6 +1,6 @@
 # Handoff — JamesLeeCY.github.io
 
-狀態更新於 **2026-10-10**。接手時先讀這份。README 是給訪客看的簡介；這份記錄架構、
+狀態更新於 **2026-10-13**。接手時先讀這份。README 是給訪客看的簡介；這份記錄架構、
 目前定位、以及待辦事項。
 
 ---
@@ -14,25 +14,29 @@
 ## 2. 架構
 
 Jekyll + GitHub Pages，推送 `main` 即部署，無 Gemfile／無建置腳本。
+本機預覽可用 Docker：`docker run --rm -v "<repo>:/srv/jekyll" -p 4000:4000 jekyll/jekyll:3.8 jekyll serve --destination /tmp/_site --force_polling`
+（輸出放容器內 /tmp，不會在 repo 產生 _site）。
+
+**中英雙語（2026-10-13）**：中文版在根目錄（網址不變），英文版在 `/en/`。每頁 front matter 必須有
+`lang: zh|en` 與 `ref`（home / projects / research / publications / awards / contact），header 的語言
+切換鈕依 `ref` 找另一語言的同一頁；layout 依 lang 設定 `<html lang>`、og:locale、描述與 hreflang。
+**改內容時兩個語言要一起改**：中文頁可保留部分英文術語，英文頁必須是純英文（不得有中文字）。
 
 ```
-_config.yml            站名、描述、聯絡資訊（email / github_username / linkedin_url）、導覽列
-_layouts/default.html  全站外框（Google Fonts: Inter + Lora）
+_config.yml            站名、描述（description 中文 / description_en 英文）、聯絡資訊
+_layouts/default.html  全站外框；依 page.lang 輸出 html lang、og:locale、hreflang
 _includes/
-  header.html          依 site.navbar 產生導覽列，當前頁標 active
+  header.html          依 _data/i18n.yml 的 nav 產生導覽列 + 語言切換鈕（.lang-switch）
   footer.html          Email + LinkedIn
-  skills.html          依 _data/skills.yml 產生技能區
+  skills.html          依 _data/skills.yml 產生技能區（title_zh / title_en）
 _data/
+  i18n.yml             各語言的導覽列與介面字串
   skills.yml           技能分組；style: tag（實心）/ method（外框）
-  publications.yml     journal_articles / book_chapters / conferences_presentations
-assets/css/style.css   全站樣式
+  publications.yml     journal_articles / book_chapters / conferences_presentations（英文，兩語共用）
+assets/css/style.css   全站樣式；900px 以下 header 改兩行，切換鈕固定右上
 assets/profile.jpg     大頭照
-index.html             首頁：簡介、學歷、核心能力
-projects.md            五個公開專案（連到各 GitHub repo）
-research.md            研究主題 + 可轉用方法
-publications.md        由 publications.yml 渲染
-awards_leadership.md   獎項與領導
-contact.md             聯絡方式
+index.html … contact.md   中文版六頁（根目錄）
+en/index.html … en/contact.md  英文版六頁
 ```
 
 **改內容的原則：** 技能、發表優先改 `_data/*.yml`，不要寫死在頁面裡。
