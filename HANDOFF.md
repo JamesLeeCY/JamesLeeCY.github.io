@@ -98,6 +98,8 @@ en/index.html … en/contact.md  英文版六頁
   README 改為六個專案（含 PACLIC）。GitHub 個人頁（JamesLeeCY/JamesLeeCY）同步更新
   代表作品與技術列表。
 
+- WorldQuant 經歷更新（2026-10-13，使用者提供）：65 個訊號通過品質、穩健性與相關性檢查（樣本內 Sharpe 中位數 1.98），7,600+ 次模擬，新增多訊號組合方法一條；網站中英首頁已改。CV（Google Doc／PDF）、Cake、LinkedIn 仍是舊數字（38 個、1.63、3,000+）。
+
 ## 4. 待辦事項
 
 0. ~~工作經歷與履歷~~（2026-10-10 完成）：首頁新增「工作經歷」區塊（WorldQuant BRAIN、
