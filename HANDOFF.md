@@ -115,7 +115,7 @@ en/index.html … en/contact.md  英文版六頁
      （籌備委員、keynote 主持，講者 Dr. Ching-Yung Lin，Graphen CEO、前 IBM Chief Scientist）。
      由 docx 上傳轉換建立，A4、日期用右對齊定位點。經歷含 UCarer（優照護）R&D PM 2021.03–08、
      台大研究助理 2019.03–2021.08、消防替代役（內政部消防署訓練中心，南投）2018.04–2019.03。
-     舊的「CV_DataScientist_Finance」不再使用；「CV_DataScientist_2026-10」「-10b」「-10c」「-10d」「-10e」「-10f」「-10g」已移到垃圾桶。TAAB 主持與籌備資訊來源為 TAAB 臉書（使用者確認）。
+     舊的「CV_DataScientist_Finance」不再使用；「CV_DataScientist_2026-10」「-10b」「-10c」「-10d」「-10e」「-10f」「-10g」「-10h」已移到垃圾桶。TAAB 主持與籌備資訊來源為 TAAB 臉書（使用者確認）。
    - 投資 Agent 卡片補上月營收驚奇 SUE（2026-10-12，依 repo README 與研究儀表板）。研究儀表板是私人
      claude.ai artifact，組織設定不允許公開分享；改為在 investment repo 開 GitHub Pages（main / 根目錄，
      加 `.nojekyll`），公開網址 https://jamesleecy.github.io/precision-weighted-investment-agent/site/research-dashboard.html ，
