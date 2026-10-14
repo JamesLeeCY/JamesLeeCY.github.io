@@ -68,7 +68,7 @@ ref: awards
                 <span class="leadership-period">2024</span>
             </div>
             <ul>
-                <li>Helped organize the 2024 TAAB Annual Symposium (November 16–17, 2024, Hunter College, New York, 100+ attendees).</li>
+                <li>Helped organize the 2024 TAAB Annual Symposium (November 16–17, 2024, Hunter College), the association's first annual meeting in New York City: about 150–200 in-person attendees, 200–250 including livestream participants and staff, and nearly 30 speakers from East Coast biopharma and academia.</li>
                 <li>Moderated the keynote by Dr. Ching-Yung Lin, CEO of Graphen, Inc. and former IBM Chief Scientist (Graph Computing).</li>
             </ul>
         </div>

@@ -100,6 +100,8 @@ en/index.html … en/contact.md  英文版六頁
 
 - WorldQuant 經歷更新（2026-10-13，使用者提供）：65 個訊號通過品質、穩健性與相關性檢查（樣本內 Sharpe 中位數 1.98），7,600+ 次模擬，新增多訊號組合方法一條；網站中英首頁已改。CV（Google Doc 10h 與網站 PDF）已同步；Cake、LinkedIn 仍是舊數字（38 個、1.63、3,000+）。
 
+- TAAB 2024 年會規模更新（2026-10-14，使用者提供）：首度移師紐約，現場約 150–200 人，含線上與工作團隊約 200–250 人，近 30 位講者。網站中英獎項頁與 CV 已改；Cake 履歷與 LinkedIn 仍寫 100+。（使用者提供的資料稱林清詠為「圖靈獎團隊」，查無出處，未採用。）
+
 ## 4. 待辦事項
 
 0. ~~工作經歷與履歷~~（2026-10-10 完成）：首頁新增「工作經歷」區塊（WorldQuant BRAIN、
@@ -107,8 +109,8 @@ en/index.html … en/contact.md  英文版六頁
    使用者的 Finance 版 CV 與 GitHub 個人頁。履歷放在 `assets/CV_ChunYiLee.pdf`：由
    Google Doc「CV_DataScientist_Finance」匯出的 PDF 移除手機號碼（聯絡行以 Calibri 重排，
    已確認原始資料無殘留），首頁加下載連結。BTBA 改為 Fundraising Co-Lead、2024–2025。
-   - **履歷來源（2026-10-12 起）**：Google Doc「CV_DataScientist_2026-10h」
-     （https://docs.google.com/document/d/1JxJqecWnXzndP5-uxaH8RsTXBlDxo5JQsQ--TjAUvf8/edit，2026-10-13 起；WorldQuant 改為 65 個訊號、Sharpe 1.98、7,600+ 次模擬），投資專案含 SUE、LINE 含 100 組合成評估，
+   - **履歷來源（2026-10-12 起）**：Google Doc「CV_DataScientist_2026-10i」
+     （https://docs.google.com/document/d/12SOknEm8-DLjKky6NJiQcytYZqOcgKJ1PrXvpF9YvQU/edit，2026-10-14 起；WorldQuant 65 個訊號、Sharpe 1.98、7,600+ 次模擬；TAAB 現場 150–200 人、約 30 位講者），投資專案含 SUE、LINE 含 100 組合成評估，
      WorldQuant 自 2026.08 起；Brandeis 訪問學者獨立成經歷；Leadership 加 TAAB 2024 年會
      （籌備委員、keynote 主持，講者 Dr. Ching-Yung Lin，Graphen CEO、前 IBM Chief Scientist）。
      由 docx 上傳轉換建立，A4、日期用右對齊定位點。經歷含 UCarer（優照護）R&D PM 2021.03–08、
@@ -141,6 +143,7 @@ en/index.html … en/contact.md  英文版六頁
    - LinkedIn：文字已備妥，待使用者貼上，並到 Post Inspector 重新抓取網站預覽。簡介可寫中研院 Scientific Researcher（與台大合聘，使用者 2026-10-12 確認；期間未提供，故不寫年份）。
    - CV 更新時：從上述 Google Doc 匯出 PDF（Drive connector 只能讀取／匯出，不能編輯），
      移除聯絡行的電話（以 Calibri 9pt 重排、保留 GitHub 連結），覆蓋 `assets/CV_ChunYiLee.pdf`。
+     腳本：scratchpad `cvdocx/build.py`（產生 docx）與 `cvdocx/redact.py <drive 匯出 json> <out.pdf>`（去電話並自我檢查）。
 1. ~~補發表連結~~（2026-10-10 完成）：書籍章節連到 OUP 書籍頁（第 6 章，無章節 DOI）；
    兩筆會議連到官方摘要集 PDF 的對應頁（CNS 2020 p.86 海報 C92、Psychonomics 2024
    p.313 海報 3067）。同時把書名副標更正為 OUP 官方的

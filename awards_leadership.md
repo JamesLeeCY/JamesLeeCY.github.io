@@ -68,7 +68,7 @@ ref: awards
                 <span class="leadership-period">2024</span>
             </div>
             <ul>
-                <li>協助籌辦 2024 TAAB Annual Symposium（2024 年 11 月 16–17 日，紐約 Hunter College，100+ 位與會者）。</li>
+                <li>協助籌辦 2024 TAAB Annual Symposium（2024 年 11 月 16–17 日，紐約 Hunter College）。年會首度移師紐約，現場約 150–200 人，加上線上直播與工作團隊共約 200–250 人；邀請近 30 位來自美東生技藥廠與學術界的講者。</li>
                 <li>以英文主持 keynote 演講：講者為林清詠博士（Dr. Ching-Yung Lin），Graphen, Inc. 執行長、前 IBM Chief Scientist（Graph Computing）。</li>
             </ul>
         </div>
