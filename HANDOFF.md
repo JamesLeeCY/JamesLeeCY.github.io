@@ -102,7 +102,7 @@ en/index.html … en/contact.md  英文版六頁
 
 - TAAB 2024 年會規模更新（2026-10-14，使用者提供）：首度移師紐約，現場約 150–200 人，含線上與工作團隊約 200–250 人，近 30 位講者。網站中英獎項頁與 CV 已改；Cake 履歷與 LinkedIn 仍寫 100+。（使用者提供的資料稱林清詠為「圖靈獎團隊」，查無出處，未採用。）
 
-- 104 履歷（My Resume，預設；2026-10-15 更新中）：已改 個人簡介/格言/6 個特色標籤、總年資 3~4年、工作經歷 6 筆（新增 WorldQuant〔兼職、金融研究員〕、優照護、台大研究助理、消防替代役；改寫 Brandeis、中研院〔Scientific Researcher, joint appointment with NTU〕）、博士結束 2027/3、中英自傳、6 項專長。尚未：語文能力（英文精通）、WorldQuant 證書、附件連結。My CV 那份未動。操作注意：104 職稱欄有自動完成，填完要點空白標籤處關閉；職務類別搜尋結果會延遲重排，選項要等 2 秒再點。
+- 104 履歷（My Resume，預設；2026-10-15 完成）：個人簡介/格言/6 個特色標籤（Data Scientist, Machine Learning, Python, RAG, LLM, Quant Research）、總年資 3~4年、工作經歷 6 筆（WorldQuant〔兼職、金融研究員〕、Brandeis、中研院〔Scientific Researcher, joint appointment with NTU〕、優照護、台大研究助理、消防替代役）、博士結束 2027/3、中英自傳、6 項專長、英文聽說讀寫精通、資格認證加上 WorldQuant 夏季體驗計畫結業證書與 BRAIN 金牌獎、附件加上網站與半導體分析報告。附件上限 6 筆，PACLIC 未放（網站已含）。My CV 那份未動。碩士研究員一筆未加（學歷已涵蓋）。操作注意：104 職稱欄有自動完成，填完要點空白標籤處關閉；職務類別搜尋結果會延遲重排，選項要等 2 秒再點。
 
 ## 4. 待辦事項
 
