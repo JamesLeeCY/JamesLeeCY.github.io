@@ -150,6 +150,31 @@ ref: projects
         </p>
     </div>
 
+    <div class="pub-section" style="margin-top:40px">
+        <h2>🎮 個人作品</h2>
+    </div>
+
+    <div class="research-item">
+        <h3>台灣金排球 <span class="text-muted">/ Taiwan Gold Volley</span></h3>
+        <div class="research-meta">
+            <span class="research-badge">Web Game</span>
+            <span class="research-badge">Real-Time Networking</span>
+            <span class="research-badge">CI/CD</span>
+        </div>
+        <p>純前端的 2D 排球對戰網頁遊戲，主角是 16 種臺灣動物，可對戰電腦、同機雙人或線上對戰，附動物圖鑑（TaiCOL 保育資料）。支援鍵盤、手機觸控與手把，可安裝為 PWA 離線遊玩。</p>
+        <ul>
+            <li>決定性物理引擎搭配 rollback 網路同步：雙方各自運算同一套引擎，每幀只交換 1 byte 輸入，每 30 幀以 hash 對帳；透過 WebRTC（PeerJS）點對點連線，不需自架後端。</li>
+            <li>自動化品質把關：單元測試涵蓋決定性、物理、rollback 與鍵位，Playwright 端對端測試在 Chromium 與 WebKit 上執行；推到 main 後測試全數通過才會建置並部署到 GitHub Pages。</li>
+        </ul>
+        <ul class="tag-list">
+            <li>TypeScript</li><li>Vite</li><li>WebRTC</li><li>Rollback Netcode</li><li>PWA</li><li>Playwright</li><li>GitHub Actions</li><li>Claude Code</li>
+        </ul>
+        <p class="pub-doi" style="margin-top:14px">
+            <a href="https://jamesleecy.github.io/beach-volley-duel/" target="_blank" rel="noopener">線上試玩</a>
+            <a href="https://github.com/JamesLeeCY/beach-volley-duel" target="_blank" rel="noopener">GitHub</a>
+        </p>
+    </div>
+
     <div class="divider"></div>
 
     <p class="text-muted" style="text-align:center">

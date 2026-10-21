@@ -150,6 +150,31 @@ ref: projects
         </p>
     </div>
 
+    <div class="pub-section" style="margin-top:40px">
+        <h2>🎮 Side Projects</h2>
+    </div>
+
+    <div class="research-item">
+        <h3>Taiwan Gold Volley <span class="text-muted">/ Browser Volleyball Game</span></h3>
+        <div class="research-meta">
+            <span class="research-badge">Web Game</span>
+            <span class="research-badge">Real-Time Networking</span>
+            <span class="research-badge">CI/CD</span>
+        </div>
+        <p>A client-only 2D volleyball game starring 16 Taiwanese animals, playable against the computer, two players on one device, or online, with an animal guide built on TaiCOL conservation data. It supports keyboard, touch and gamepad, and installs as a PWA for offline play.</p>
+        <ul>
+            <li>Deterministic physics engine with rollback netcode: both peers run the same engine, exchange only 1 byte of input per frame and reconcile with a state hash every 30 frames, connected peer to peer over WebRTC (PeerJS) with no backend.</li>
+            <li>Automated quality gates: unit tests cover determinism, physics, rollback and key bindings, and Playwright end-to-end tests run on Chromium and WebKit; every push to main is built and deployed to GitHub Pages only after all tests pass.</li>
+        </ul>
+        <ul class="tag-list">
+            <li>TypeScript</li><li>Vite</li><li>WebRTC</li><li>Rollback Netcode</li><li>PWA</li><li>Playwright</li><li>GitHub Actions</li><li>Claude Code</li>
+        </ul>
+        <p class="pub-doi" style="margin-top:14px">
+            <a href="https://jamesleecy.github.io/beach-volley-duel/" target="_blank" rel="noopener">Play online</a>
+            <a href="https://github.com/JamesLeeCY/beach-volley-duel" target="_blank" rel="noopener">GitHub</a>
+        </p>
+    </div>
+
     <div class="divider"></div>
 
     <p class="text-muted" style="text-align:center">
