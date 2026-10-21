@@ -164,3 +164,5 @@ en/index.html … en/contact.md  英文版六頁
    - RAG Copilot 的語料是未發表論文，網站只寫方法與彙總指標，不寫論文內容。
    - 私有 repo（fmri-db、brain-forest-exposure-study3、ntsec-forest-fmri、
      WQ_open_machine_taiwan 等）不放上網站。例外：PACLIC 40 經使用者同意列出，只連正式站。
+
+- 2026-10-22: 專案頁（中英）新增「個人作品 / Side Projects」區塊，只放台灣金排球（beach-volley-duel）。台灣大亂鬥（brawl-kids）因角色戲仿政治人物，刻意不放進作品集，CV／104／Cake 也不放。
