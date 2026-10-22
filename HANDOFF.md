@@ -166,3 +166,4 @@ en/index.html … en/contact.md  英文版六頁
      WQ_open_machine_taiwan 等）不放上網站。例外：PACLIC 40 經使用者同意列出，只連正式站。
 
 - 2026-10-22: 專案頁（中英）新增「個人作品 / Side Projects」區塊，只放台灣金排球（beach-volley-duel）。台灣大亂鬥（brawl-kids）因角色戲仿政治人物，刻意不放進作品集，CV／104／Cake 也不放。
+- 2026-10-22: 加入深色模式。CSS 變數在 :root 定義淺色，深色寫在 prefers-color-scheme 與 [data-theme="dark"]；<head> 內 inline script 先套主題避免閃白，header 的 .theme-switch 切換並存 localStorage("theme")。實心按鈕／標籤／頁尾改用 --solid-bg、--solid-fg、--footer-bg，不要再直接用 --navy 當背景（深色時 --navy 是淺色標題字）。
