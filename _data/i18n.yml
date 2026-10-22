@@ -6,6 +6,8 @@ zh:
   switch_label: EN
   switch_title: Switch to English
   theme_title: 切換深色／淺色模式
+  theme_dark: 深色
+  theme_light: 淺色
   nav:
     - { title: 首頁, ref: home }
     - { title: 專案, ref: projects }
@@ -20,6 +22,8 @@ en:
   switch_label: 中文
   switch_title: 切換為中文
   theme_title: Toggle dark mode
+  theme_dark: Dark
+  theme_light: Light
   nav:
     - { title: Home, ref: home }
     - { title: Projects, ref: projects }

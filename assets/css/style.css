@@ -13,7 +13,7 @@
     --bg-alt: #f6f8f9;
     --border: #e6eaed;
     --header-bg: rgba(255,255,255,0.92);
-    --solid-bg: #14253a;          /* 實心按鈕與標籤 */
+    --solid-bg: #14253a;          /* 撖血?????蝐?*/
     --solid-bg-hover: #2c4a6e;
     --solid-fg: #ffffff;
     --footer-bg: #14253a;
@@ -28,7 +28,7 @@
     --font-serif: 'Lora', Georgia, serif;
 }
 
-/* 深色主題：未手動選擇時跟隨系統設定，手動切換後以 data-theme 為準 */
+/* 瘛梯銝駁?嚗???豢????函頂蝯梯身摰?????敺誑 data-theme ?箸? */
 @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
         --navy: #e6edf5;
@@ -190,26 +190,33 @@ main { min-height: 60vh; }
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 32px;
-    height: 30px;
-    padding: 0;
-    border: 1px solid var(--border);
+    gap: 6px;
+    height: 32px;
+    padding: 0 12px 0 10px;
+    border: 1.5px solid var(--accent);
     border-radius: 999px;
     background: transparent;
-    color: var(--navy);
+    background: color-mix(in srgb, var(--accent) 14%, transparent);
+    color: var(--accent);
+    font: inherit;
+    font-size: 0.82rem;
+    font-weight: 600;
+    line-height: 1;
     cursor: pointer;
     transition: all 0.2s;
 }
 
-.theme-switch:hover { border-color: var(--accent); color: var(--accent); }
-.theme-switch svg { width: 16px; height: 16px; }
-/* 淺色時顯示月亮（切到深色），深色時顯示太陽 */
-.theme-switch .icon-sun { display: none; }
-:root[data-theme="dark"] .theme-switch .icon-sun { display: block; }
-:root[data-theme="dark"] .theme-switch .icon-moon { display: none; }
+.theme-switch:hover { background: var(--accent); color: var(--bg); }
+.theme-switch svg { width: 17px; height: 17px; flex: none; }
+/* ??憿舐內???????璅∪?嚗滓?脫?憿舐內?漁嚗楛?莎?瘛梯?＊蝷箏云?踝?瘛箄 */
+.theme-switch .icon-sun, .theme-switch .label-light { display: none; }
+:root[data-theme="dark"] .theme-switch .icon-sun,
+:root[data-theme="dark"] .theme-switch .label-light { display: inline; }
+:root[data-theme="dark"] .theme-switch .icon-moon,
+:root[data-theme="dark"] .theme-switch .label-dark { display: none; }
 
 /* ============================================
-   Profile Hero (Homepage — academic layout)
+   Profile Hero (Homepage ??academic layout)
    ============================================ */
 .profile {
     max-width: var(--max-width);
@@ -623,7 +630,7 @@ main { min-height: 60vh; }
     .exp-period { min-width: unset; }
 }
 
-/* 導覽列加上語言切換鈕後，英文版在 900px 以下放不下一行，改為兩行排列 */
+/* 撠汗??銝?閮????嚗????900px 隞乩??曆?銝?銵??寧?抵??? */
 @media (max-width: 900px) {
     .header-inner {
         position: relative;
@@ -636,7 +643,7 @@ main { min-height: 60vh; }
     .header-right { width: 100%; }
     .header-tools { position: absolute; top: 7px; right: 16px; }
     .lang-switch { padding: 3px 10px; font-size: 0.78rem; }
-    .theme-switch { width: 28px; height: 26px; }
+    .theme-switch { height: 28px; padding: 0 10px 0 8px; font-size: 0.78rem; }
     .site-nav ul { gap: 0; flex-wrap: wrap; margin-left: -9px; }
 }
 
@@ -644,4 +651,16 @@ main { min-height: 60vh; }
     .site-nav ul { margin-left: -7px; }
     .site-nav a { display: inline-block; padding: 6px 7px; font-size: 0.78rem; }
     .site-nav a.active::after { left: 7px; right: 7px; }
+}
+
+/* 窄手機上讓網站名稱與右上角的主題／語言按鈕不重疊 */
+@media (max-width: 420px) {
+    .site-title { font-size: 0.9rem; }
+}
+
+/* 極窄螢幕（約 360px 以下）放不下文字，只保留圖示 */
+@media (max-width: 360px) {
+    .theme-switch .label-dark, .theme-switch .label-light,
+    :root[data-theme="dark"] .theme-switch .label-light { display: none; }
+    .theme-switch { padding: 0 8px; }
 }
