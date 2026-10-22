@@ -5,6 +5,7 @@ zh:
   og_locale: zh_TW
   switch_label: EN
   switch_title: Switch to English
+  theme_title: 切換深色／淺色模式
   nav:
     - { title: 首頁, ref: home }
     - { title: 專案, ref: projects }
@@ -18,6 +19,7 @@ en:
   og_locale: en_US
   switch_label: 中文
   switch_title: 切換為中文
+  theme_title: Toggle dark mode
   nav:
     - { title: Home, ref: home }
     - { title: Projects, ref: projects }

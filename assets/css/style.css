@@ -12,6 +12,12 @@
     --bg: #ffffff;
     --bg-alt: #f6f8f9;
     --border: #e6eaed;
+    --header-bg: rgba(255,255,255,0.92);
+    --solid-bg: #14253a;          /* 實心按鈕與標籤 */
+    --solid-bg-hover: #2c4a6e;
+    --solid-fg: #ffffff;
+    --footer-bg: #14253a;
+    color-scheme: light;
     --shadow-sm: 0 1px 2px rgba(20,37,58,0.06);
     --shadow-md: 0 6px 24px rgba(20,37,58,0.08);
     --radius: 8px;
@@ -20,6 +26,50 @@
     --content-width: 760px;
     --font-body: 'Inter', -apple-system, BlinkMacSystemFont, "Noto Sans TC", sans-serif;
     --font-serif: 'Lora', Georgia, serif;
+}
+
+/* 深色主題：未手動選擇時跟隨系統設定，手動切換後以 data-theme 為準 */
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+        --navy: #e6edf5;
+        --navy-light: #b9c6d4;
+        --accent: #2dd4bf;
+        --accent-light: #5eead4;
+        --gold: #d6aa5e;
+        --text: #c9d3de;
+        --text-muted: #8b98a8;
+        --bg: #111a24;
+        --bg-alt: #0c131b;
+        --border: #243242;
+        --shadow-sm: 0 1px 2px rgba(0,0,0,0.4);
+        --shadow-md: 0 6px 24px rgba(0,0,0,0.45);
+        --header-bg: rgba(12,19,27,0.88);
+        --solid-bg: #1f3a52;
+        --solid-bg-hover: #2a4c6a;
+        --solid-fg: #e6edf5;
+        --footer-bg: #080d13;
+        color-scheme: dark;
+    }
+}
+:root[data-theme="dark"] {
+    --navy: #e6edf5;
+    --navy-light: #b9c6d4;
+    --accent: #2dd4bf;
+    --accent-light: #5eead4;
+    --gold: #d6aa5e;
+    --text: #c9d3de;
+    --text-muted: #8b98a8;
+    --bg: #111a24;
+    --bg-alt: #0c131b;
+    --border: #243242;
+    --shadow-sm: 0 1px 2px rgba(0,0,0,0.4);
+    --shadow-md: 0 6px 24px rgba(0,0,0,0.45);
+    --header-bg: rgba(12,19,27,0.88);
+    --solid-bg: #1f3a52;
+    --solid-bg-hover: #2a4c6a;
+    --solid-fg: #e6edf5;
+    --footer-bg: #080d13;
+    color-scheme: dark;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -60,7 +110,7 @@ main { min-height: 60vh; }
    Header & Navigation
    ============================================ */
 .site-header {
-    background: rgba(255,255,255,0.92);
+    background: var(--header-bg);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border);
     position: sticky;
@@ -133,6 +183,30 @@ main { min-height: 60vh; }
 }
 
 .lang-switch:hover { border-color: var(--accent); color: var(--accent); }
+
+.header-tools { display: flex; align-items: center; gap: 6px; flex: none; }
+
+.theme-switch {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 30px;
+    padding: 0;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--navy);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.theme-switch:hover { border-color: var(--accent); color: var(--accent); }
+.theme-switch svg { width: 16px; height: 16px; }
+/* 淺色時顯示月亮（切到深色），深色時顯示太陽 */
+.theme-switch .icon-sun { display: none; }
+:root[data-theme="dark"] .theme-switch .icon-sun { display: block; }
+:root[data-theme="dark"] .theme-switch .icon-moon { display: none; }
 
 /* ============================================
    Profile Hero (Homepage — academic layout)
@@ -226,12 +300,12 @@ main { min-height: 60vh; }
 }
 
 .profile-link.primary {
-    background: var(--navy);
-    color: #fff;
-    border-color: var(--navy);
+    background: var(--solid-bg);
+    color: var(--solid-fg);
+    border-color: var(--solid-bg);
 }
 
-.profile-link.primary:hover { background: var(--navy-light); color: #fff; }
+.profile-link.primary:hover { background: var(--solid-bg-hover); color: var(--solid-fg); }
 
 /* ============================================
    Section blocks (homepage)
@@ -316,8 +390,8 @@ main { min-height: 60vh; }
 .tag-list, .method-list { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
 
 .tag-list li {
-    background: var(--navy);
-    color: #fff;
+    background: var(--solid-bg);
+    color: var(--solid-fg);
     padding: 5px 14px;
     border-radius: 6px;
     font-size: 0.85rem;
@@ -434,7 +508,7 @@ main { min-height: 60vh; }
     transition: all 0.2s;
 }
 
-.pub-doi a:hover { background: var(--accent); color: #fff; }
+.pub-doi a:hover { background: var(--accent); color: var(--bg); }
 
 /* ============================================
    Awards Page
@@ -509,7 +583,7 @@ main { min-height: 60vh; }
 /* ============================================
    Footer
    ============================================ */
-.site-footer { background: var(--navy); color: rgba(255,255,255,0.7); padding: 40px 32px; margin-top: 80px; text-align: center; }
+.site-footer { background: var(--footer-bg); color: rgba(255,255,255,0.7); padding: 40px 32px; margin-top: 80px; text-align: center; }
 .footer-inner { max-width: var(--max-width); margin: 0 auto; }
 .footer-links { display: flex; justify-content: center; gap: 24px; margin-bottom: 16px; flex-wrap: wrap; }
 .footer-links a { color: rgba(255,255,255,0.8); font-size: 0.9rem; }
@@ -560,7 +634,9 @@ main { min-height: 60vh; }
         gap: 4px;
     }
     .header-right { width: 100%; }
-    .lang-switch { position: absolute; top: 9px; right: 16px; padding: 3px 10px; font-size: 0.78rem; }
+    .header-tools { position: absolute; top: 7px; right: 16px; }
+    .lang-switch { padding: 3px 10px; font-size: 0.78rem; }
+    .theme-switch { width: 28px; height: 26px; }
     .site-nav ul { gap: 0; flex-wrap: wrap; margin-left: -9px; }
 }
 
