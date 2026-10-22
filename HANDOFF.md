@@ -167,3 +167,4 @@ en/index.html … en/contact.md  英文版六頁
 
 - 2026-10-22: 專案頁（中英）新增「個人作品 / Side Projects」區塊，只放台灣金排球（beach-volley-duel）。台灣大亂鬥（brawl-kids）因角色戲仿政治人物，刻意不放進作品集，CV／104／Cake 也不放。
 - 2026-10-22: 加入深色模式。CSS 變數在 :root 定義淺色，深色寫在 prefers-color-scheme 與 [data-theme="dark"]；<head> 內 inline script 先套主題避免閃白，header 的 .theme-switch 切換並存 localStorage("theme")；沒有存過選擇時一律預設深色（2026-10-22 改，不再跟隨系統）。實心按鈕／標籤／頁尾改用 --solid-bg、--solid-fg、--footer-bg，不要再直接用 --navy 當背景（深色時 --navy 是淺色標題字）。
+- 2026-10-22: 新增面試追蹤 `/interview-tracker/`（不在導覽列、noindex）。純靜態頁 + Supabase（RLS 只允許擁有者讀寫；分享頁 `share.html` 只讀 `public_*` view，私人欄位不會外流）。設定步驟、資料欄位與隱私邊界見 `interview-tracker/SETUP.md`；資料表與權限在 `schema.sql`。`config.js` 只能放 anon key，不可放 service_role key。

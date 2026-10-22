@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="color-scheme" content="light dark">
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (t !== 'dark' && t !== 'light') t = 'dark';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <title>求職紀錄分享</title>
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="app.css">
+  <style>
+    .intro { max-width: 760px; margin-bottom: 24px; }
+    .intro p { margin-top: 6px; }
+    .share-apps { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 14px; }
+    .share-app h3 { font-size: 17px; }
+    .share-app .role { color: var(--text); font-size: 14px; margin: 2px 0 10px; }
+    .share-app .note { margin: 0 0 14px; }
+    .group-title { font-size: 13px; font-weight: 700; color: var(--muted); letter-spacing: 0.04em; margin: 28px 0 10px; }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">求職<span>紀錄</span></div>
+      <div style="flex:1"></div>
+      <div class="actions"><button class="btn ghost sm" id="btn-theme">淺色</button></div>
+    </div>
+  </header>
+  <main id="main"><p class="muted">載入中…</p></main>
+  <script type="module" src="share.js"></script>
+</body>
+</html>
