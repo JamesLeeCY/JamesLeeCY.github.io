@@ -15,7 +15,7 @@ export const ENDED = ['接受', '婉拒', '未通過', '撤回'];
 export const STATUSES = [...ACTIVE, ...ENDED];
 export const STATUS_ORDER = Object.fromEntries(STATUSES.map((s, i) => [s, i]));
 
-export const CHANNELS = ['官網', '內推', '獵頭', '校園徵才', 'LinkedIn', '104／1111', '其他'];
+export const CHANNELS = ['官網', '104', 'Cake', 'LinkedIn', '內推', '獵頭', '校園徵才', '其他'];
 export const PRIORITIES = [{ value: 1, label: '高' }, { value: 2, label: '中' }, { value: 3, label: '低' }];
 export const STAGE_KINDS = ['筆試/OA', 'Behavioral', 'Case', 'Coding', 'Technical', 'HR', '其他'];
 export const STAGE_NAMES = ['履歷審查', '筆試/OA', '一面', '二面', '三面', 'Case 面試', 'Partner 面', '主管面', 'HR 面', 'Offer 談判'];
@@ -25,7 +25,7 @@ export const PREP_KINDS = ['Case', 'LeetCode', 'Behavioral', '產業研究'];
 export const CASE_TYPES = ['Market sizing', 'Profitability', 'Market entry', 'M&A', 'Pricing', 'Growth', 'Operations', 'Brainteaser'];
 export const LC_TOPICS = ['Array', 'Hash Table', 'Two Pointers', 'Sliding Window', 'Stack', 'Binary Search', 'Linked List', 'Tree', 'Graph', 'Heap', 'Backtracking', 'DP', 'Greedy', 'SQL'];
 export const DIFFICULTIES = ['Easy', 'Medium', 'Hard'];
-export const INDUSTRIES = ['管理顧問', '半導體', '科技／AI', '金融', '電商', '生醫', '其他'];
+export const INDUSTRIES = ['Tech', 'Finance', 'Consulting', 'Software', 'Quant', 'E-commerce', 'Pharma', 'Media', 'Car', 'Other'];
 
 export const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) =>
   ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);

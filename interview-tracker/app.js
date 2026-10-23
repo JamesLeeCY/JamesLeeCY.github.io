@@ -182,13 +182,19 @@ function appFields() {
     { name: 'company', label: '公司', type: 'list', options: state.companies.map((c) => c.name), required: true },
     { name: 'industry', label: '產業', type: 'list', options: INDUSTRIES },
     { name: 'role', label: '職缺', required: true, full: true, placeholder: '例：Business Analyst、Data Scientist' },
+    { name: 'job_url', label: '職缺網址', type: 'url', full: true },
     { name: 'status', label: '狀態', type: 'select', options: STATUSES },
     { name: 'priority', label: '優先度', type: 'select', options: PRIORITIES },
-    { name: 'channel', label: '管道', type: 'list', options: CHANNELS },
+    { name: 'channel', label: '管道／平台', type: 'list', options: CHANNELS },
+    { name: 'location', label: '地點' },
     { name: 'applied_on', label: '投遞日', type: 'date' },
     { name: 'deadline', label: '截止日', type: 'date', hint: '投遞或回覆截止，會出現在時間軸' },
+    { name: 'resume_uploaded', label: '已上傳履歷', type: 'check', full: true },
     { type: 'section', label: '私人（永遠不會出現在分享頁）' },
+    { name: 'latest_update', label: '最新消息', full: true, placeholder: '例：一面結束，等通知' },
     { name: 'contact', label: '聯絡人', placeholder: '獵頭、HR、內推人' },
+    { name: 'connections', label: '認識的人', placeholder: '公司內的學長姐、朋友' },
+    { name: 'portal_account', label: '求職網站帳號', hint: '只記帳號；密碼請放密碼管理工具' },
     { name: 'salary_note', label: '薪資／條件' },
     { name: 'notes', label: '備註', type: 'textarea' },
     { type: 'section', label: '分享' },
@@ -418,8 +424,12 @@ function appCard(a) {
   if (ns) {
     const d = stageDay(ns);
     next = `<div class="next">下一關：<b>${esc(ns.name)}</b>${d ? ` · ${fmtDay(d, false)}（${relDays(daysUntil(d))}）` : ' · 待排定'}</div>`;
-  } else if (a.deadline && !ENDED.includes(a.status)) {
+  } else if (a.deadline && !ENDED.includes(a.status) && daysUntil(a.deadline) >= 0) {
     next = `<div class="next">截止：<b>${fmtDay(a.deadline, false)}</b>（${relDays(daysUntil(a.deadline))}）</div>`;
+  } else if (a.latest_update) {
+    next = `<div class="next">${esc(a.latest_update)}</div>`;
+  } else if (a.applied_on) {
+    next = `<div class="next">${fmtDay(a.applied_on, false)} 投遞（${relDays(daysUntil(a.applied_on))}）</div>`;
   }
   const prio = a.priority === 1 ? '<span class="prio p1">● 高</span>' : a.priority === 3 ? '<span class="prio">低</span>' : '';
   const ended = ENDED.includes(a.status) ? ` <span class="badge ${statusClass(a.status)}">${esc(a.status)}</span>` : '';
@@ -514,12 +524,18 @@ function renderDetail(id) {
         <section class="card">
           <div class="section-title">資訊</div>
           <dl class="kv">
+            ${kv('最新消息', esc(a.latest_update))}
+            ${kv('職缺網址', a.job_url && `<a href="${esc(a.job_url)}" target="_blank" rel="noopener">開啟職缺頁面</a>`)}
             ${kv('產業', esc(c?.industry))}
+            ${kv('地點', esc(a.location))}
             ${kv('管道', esc(a.channel))}
+            ${kv('履歷', a.resume_uploaded ? '已上傳' : '')}
             ${kv('優先度', esc(PRIORITIES.find((p) => p.value === a.priority)?.label))}
             ${kv('投遞日', a.applied_on && fmtDay(a.applied_on))}
             ${kv('截止日', a.deadline && `${fmtDay(a.deadline)}（${relDays(daysUntil(a.deadline))}）`)}
             ${kv('聯絡人', esc(a.contact))}
+            ${kv('認識的人', esc(a.connections))}
+            ${kv('帳號', esc(a.portal_account))}
             ${kv('薪資／條件', esc(a.salary_note))}
             ${kv('備註', esc(a.notes))}
             ${kv('分享', a.is_public ? `公開${a.share_anonymous ? '（匿名）' : ''}` : '<span class="lock">不公開</span>')}

@@ -176,3 +176,13 @@ where is_public;
 grant select on public.public_applications, public.public_stages,
                 public.public_prep_stats, public.public_prep_weekly, public.public_prep
   to anon, authenticated;
+
+-- ---------- v2（2026-10-23）：對齊原本的求職試算表 ----------
+-- 密碼刻意不建欄位：請放在密碼管理工具，不要存進資料庫。
+
+alter table public.applications add column if not exists job_url         text;     -- 職缺頁面
+alter table public.applications add column if not exists location        text;
+alter table public.applications add column if not exists connections     text;     -- 認識的人（私人）
+alter table public.applications add column if not exists resume_uploaded boolean not null default false;
+alter table public.applications add column if not exists portal_account  text;     -- 求職網站登入帳號（私人）
+alter table public.applications add column if not exists latest_update   text;     -- 最新消息（私人）
