@@ -33,6 +33,7 @@
 | 檔案 | 用途 |
 | --- | --- |
 | `index.html` `app.js` | 主程式（時間軸、看板、詳情、準備紀錄、統計） |
+| `calendar.js` | 行事曆（月／週檢視、匯出 .ics 到 Google 日曆） |
 | `share.html` `share.js` | 公開分享頁 |
 | `common.js` | 共用常數、日期工具、Supabase client |
 | `app.css` | 樣式（沿用作品集配色，預設深色） |

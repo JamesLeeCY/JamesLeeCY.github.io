@@ -4,6 +4,7 @@ import {
   esc, ymd, daysUntil, relDays, fmtDay, fmtTime, isoToLocalInput, localInputToIso, initTheme,
   statusClass, resultClass,
 } from './common.js';
+import { renderCalendar } from './calendar.js';
 
 const $ = (sel, el = document) => el.querySelector(sel);
 const $$ = (sel, el = document) => [...el.querySelectorAll(sel)];
@@ -333,7 +334,7 @@ function setActiveTab(view) {
 function render(scrollTop = false) {
   const [view, id] = (location.hash.slice(1) || 'timeline').split('/');
   setActiveTab(view === 'app' ? 'board' : view);
-  const fn = { timeline: renderTimeline, board: renderBoard, prep: renderPrep, stats: renderStats, app: () => renderDetail(id) }[view] || renderTimeline;
+  const fn = { timeline: renderTimeline, calendar: () => renderCalendar(main, state, appTitle), board: renderBoard, prep: renderPrep, stats: renderStats, app: () => renderDetail(id) }[view] || renderTimeline;
   fn();
   if (scrollTop) window.scrollTo({ top: 0 });
 }
