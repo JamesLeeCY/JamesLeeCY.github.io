@@ -87,13 +87,13 @@ ref: projects
             <span class="research-badge">Payment Integration</span>
             <span class="research-badge">Production Operations</span>
         </div>
-        <p>第 40 屆 PACLIC（Pacific Asia Conference on Language, Information and Computation，2026/12 於台大舉辦）的線上報名與繳費系統，2026-10-01 正式上線。以既有會議報名系統為基礎，與團隊協作開發，我負責後端功能與上線維運。</p>
+        <p>第 40 屆 PACLIC（Pacific Asia Conference on Language, Information and Computation，2026/12 於台大舉辦）的線上報名與繳費系統。2026 年 9 月接手既有的會議報名系統（NestJS、Next.js、PostgreSQL），由我<strong>獨自負責開發與上線維運</strong>，從接手到正式上線只花 8 天（合併 82 個 PR），2026-10-01 開放報名。</p>
         <ul>
-            <li>流程：Google 登入 → 報名表 → 學生上傳學生證 → 藍新金流（NewebPay）刷卡；主辦方後台審核學生證、匯出 CSV 名單。</li>
-            <li>計價改為查表式：新費率的早鳥／一般價差在不同級距不一致，用單一折扣公式算不出來；早鳥資格以付款完成時間判定，截止後自動關閉報名與付款。</li>
-            <li>刻意的設計：金額只由後端依報名內容計算，前端送出的金額一律不採信；學生證審核與付款脫鉤，審核進度不會卡住繳費。</li>
-            <li>個資保護：學生證於會後依保存期限自動刪除。</li>
-            <li>部署與維運：Docker Compose + Nginx、GitHub Actions CI、需手動確認的正式部署流程、資料庫每日加密備份並同步到雲端、還原演練。</li>
+            <li>服務 <strong>196 位報名者、來自 26 國</strong>（82% 為國際人士），透過藍新金流（NewebPay）處理約 <strong>NT$1.25M（約 US$39K）</strong>刷卡款項；付款完成率 88%，從報名到付款的中位時間 10 分鐘。</li>
+            <li>早鳥截止前每週報名量暴增 3 倍（59% 的報名集中在最後三週），系統不需任何調整即順利承接。</li>
+            <li>建立學生身分審核流程，處理 94 筆學生報名；審核與付款脫鉤，審核進度不會卡住繳費，學生證於會後依保存期限自動刪除。</li>
+            <li>金額只由後端依報名內容與費率表計算，前端送出的金額一律不採信；早鳥資格以付款完成時間判定，截止後自動關閉報名與付款。</li>
+            <li>正式環境以 CI/CD 部署、後端 2 個副本運行，資料庫每晚加密備份到 3 個位置。</li>
         </ul>
         <ul class="tag-list">
             <li>TypeScript</li><li>JavaScript</li><li>NestJS</li><li>Next.js</li><li>React</li><li>PostgreSQL</li><li>TypeORM</li><li>Zod</li><li>Docker</li><li>GitHub Actions</li><li>Claude Code</li>

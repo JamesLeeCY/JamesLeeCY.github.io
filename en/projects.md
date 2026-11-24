@@ -87,13 +87,13 @@ ref: projects
             <span class="research-badge">Payment Integration</span>
             <span class="research-badge">Production Operations</span>
         </div>
-        <p>The online registration and payment system for the 40th PACLIC (Pacific Asia Conference on Language, Information and Computation, held at National Taiwan University in December 2026), live since October 1, 2026. Built on an existing conference registration system with a team; I was responsible for backend features and production operations.</p>
+        <p>The online registration and payment system for the 40th PACLIC (Pacific Asia Conference on Language, Information and Computation, held at National Taiwan University in December 2026). In September 2026 I took over an existing conference registration system (NestJS, Next.js, PostgreSQL) as the <strong>sole developer and operator</strong> and went from takeover to public launch in 8 days (82 merged PRs); registration opened on October 1, 2026.</p>
         <ul>
-            <li>Flow: Google sign-in → registration form → student-ID upload for students → card payment through NewebPay; organizers review student IDs and export attendee lists as CSV.</li>
-            <li>Table-based pricing: the early-bird/regular gap in the new fee schedule differs across tiers, so no single discount formula fits; early-bird eligibility is set by payment completion time, and registration and payment close automatically at the deadline.</li>
-            <li>Deliberate design: amounts are computed only on the backend from the registration contents, and any amount sent from the frontend is ignored; student-ID review is decoupled from payment so review never blocks it.</li>
-            <li>Privacy: student IDs are deleted automatically after the conference according to the retention period.</li>
-            <li>Deployment and operations: Docker Compose + Nginx, GitHub Actions CI, a production deploy that requires manual confirmation, daily encrypted database backups synced to the cloud, and restore drills.</li>
+            <li>Served <strong>196 registrants from 26 countries</strong> (82% international) and processed about <strong>NT$1.25M (~US$39K)</strong> in card payments through NewebPay, with an 88% payment-completion rate and a median of 10 minutes from registration to payment.</li>
+            <li>Absorbed a 3× surge in weekly sign-ups before the early-bird deadline (59% of all registrations came in the final three weeks) with no system changes.</li>
+            <li>Built a student-verification workflow covering 94 student registrations; review is decoupled from payment so it never blocks it, and student IDs are deleted automatically after the conference according to the retention period.</li>
+            <li>Amounts are computed only on the backend from the registration contents and fee table, and any amount sent from the frontend is ignored; early-bird eligibility is set by payment completion time, and registration and payment close automatically at the deadline.</li>
+            <li>Production runs with CI/CD and 2 backend replicas, with nightly encrypted database backups to 3 locations.</li>
         </ul>
         <ul class="tag-list">
             <li>TypeScript</li><li>JavaScript</li><li>NestJS</li><li>Next.js</li><li>React</li><li>PostgreSQL</li><li>TypeORM</li><li>Zod</li><li>Docker</li><li>GitHub Actions</li><li>Claude Code</li>
